@@ -9,6 +9,17 @@ export default function ForgotPassword() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState('');
 
+// ============================================
+// CONTROL #2: INPUT VALIDATION (Forgot Password)
+// ============================================
+// Threat: SQL Injection
+// CIA Principle: Integrity
+//
+// Implementation:
+// Email validated before password reset request sent to Supabase
+//
+// Code Location: src/pages/ForgotPassword.jsx, line ~XX
+
   const validateEmail = (email) => {
     return String(email)
       .toLowerCase()

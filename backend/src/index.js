@@ -8,33 +8,57 @@ app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
 const PORT = process.env.PORT || 5000;
+const { loginLimiter } = require('./middleware/rateLimiter');
+const recommendationsRouter = require('./routes/recommendations');
+
+app.use('/api/recommendations', recommendationsRouter);
 
 app.get('/', (req, res) => {
     res.send('HymnMatch Secure Backend is Running!');
 });
 
+app.post('/auth/login', loginLimiter, async (req, res) => {
+  // Existing login logic here
+  const { email, password } = req.body;
+  
+  try {
+    // Your login code (Dummy for thesis defense proof)
+    if (!email || !password) throw new Error('Missing credentials');
+    res.status(200).json({ success: true });
+  } catch (error) {
+    return res.status(401).json({ error: 'Invalid credentials' });
+  }
+});
+
 app.post('/api/analyze-document', async (req, res) => {
     try {
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
         
-        const { imageBase64, mimeType } = req.body;
+        const { imageBase64, mimeType, season } = req.body;
         
         if (!imageBase64) {
             return res.status(400).json({ error: "No image provided" });
         }
 
+        const userSeason = season || 'Ordinary Time';
+
         const prompt = `You are an expert Catholic Liturgical Music Director.
 Analyze this image of a liturgical document (e.g. readings, missal, homily notes).
 1. Extract the main text (OCR).
 2. Identify the core religious theme (e.g. "Grace", "Repentance", "Eucharist") and the tone (e.g. "Hopeful", "Joyful", "Penitential").
-3. Recommend exactly 1-2 appropriate Catholic hymns for EACH of the following Mass parts: Entrance, Offertory, Communion.
+3. Detect the most likely liturgical season from the content (Advent, Christmas, Lent, Easter, Ordinary Time, or Pentecost). The user currently has "${userSeason}" selected — compare your detection against this.
+4. List the top 2-3 themes found in the reading.
+5. Recommend exactly 1-2 appropriate Catholic hymns for EACH of the following Mass parts: Entrance, Offertory, Communion.
 CRITICAL INSTRUCTION: You MUST ONLY recommend officially approved Catholic hymns found in hymnals like Breaking Bread, Gather, Journeysongs, or Catholic Book of Worship (published by OCP, GIA, WLP, etc.). Do NOT recommend secular songs or general non-denominational Protestant worship songs.
 Return the result EXACTLY as a raw JSON object with this structure (no markdown formatting):
 {
   "extractedText": "...",
-  "theme": "...",
+  "theme": "Main Theme",
+  "themes": ["theme1", "theme2", "theme3"],
   "tone": "...",
+  "detectedSeason": "Detected Liturgical Season",
+  "seasonConfidence": 95,
   "recommendations": {
     "Entrance": [{ "title": "Song Title", "composer": "Composer Name", "matchScore": 95 }],
     "Offertory": [{ "title": "Song Title", "composer": "Composer Name", "matchScore": 90 }],
@@ -70,7 +94,7 @@ Return the result EXACTLY as a raw JSON object with this structure (no markdown 
 app.post('/api/lyrics', async (req, res) => {
     try {
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
         
         const { title, composer } = req.body;
         

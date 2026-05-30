@@ -66,7 +66,7 @@ const formatBytes = (b) =>
   b < 1024 * 1024 ? `${(b / 1024).toFixed(1)} KB` : `${(b / 1024 / 1024).toFixed(1)} MB`;
 
 // ═════════════════════════════════════════════════════════════════════════════
-export default function Home() {
+export default function Upload() {
   const navigate = useNavigate();
   const isMobile = isMobileDevice();
 

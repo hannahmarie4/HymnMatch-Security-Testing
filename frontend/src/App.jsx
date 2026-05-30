@@ -7,6 +7,7 @@ import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import Home from './pages/Home';
+import Upload from './pages/Upload';
 import Readings from './pages/Readings/Readings';
 import LoadingAnalysis from './pages/LoadingAnalysis';
 import Suggestions from './pages/Suggestions';
@@ -28,8 +29,15 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
 
         {/* Protected Routes Wrapped in DashboardLayout */}
+        {/* 
+        // ============================================
+        // CONTROL #3: PROTECTED ROUTES
+        // ============================================
+        // Enforces authentication for all private paths
+        */}
         <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
           <Route path="/home" element={<Home />} />
+          <Route path="/upload" element={<Upload />} />
           <Route path="/readings" element={<Readings />} />
           <Route path="/loading-analysis" element={<LoadingAnalysis />} />
           <Route path="/suggestions" element={<Suggestions />} />

@@ -13,7 +13,7 @@ export default function SavedSongs() {
 
   return (
     <div className="max-w-3xl mx-auto py-4">
-      <h1 className="text-3xl font-extrabold text-slate-900 mb-8 tracking-tight">Saved Songs</h1>
+      <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-8 tracking-tight">Saved Songs</h1>
 
       <div className="grid grid-cols-3 gap-6 mb-10">
         <div className="col-span-2 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl p-8 text-white shadow-lg shadow-purple-500/20 relative overflow-hidden">
@@ -31,16 +31,16 @@ export default function SavedSongs() {
 
       <div className="space-y-3">
         {savedSongs.map((song, i) => (
-          <Link to="/song-detail" key={i} className="flex items-center justify-between bg-white rounded-2xl p-5 border border-slate-100 shadow-sm hover:shadow-md hover:border-purple-200 transition-all group">
+          <Link to="/song-detail" key={i} className="flex items-center justify-between bg-white dark:bg-slate-800/80 rounded-2xl p-5 border border-slate-100 dark:border-slate-700/40 shadow-sm hover:shadow-md hover:border-purple-200 dark:hover:border-purple-800/50 transition-all group">
             <div>
-              <h3 className="text-lg font-bold text-slate-800 group-hover:text-purple-700 transition-colors mb-1">{song.title}</h3>
-              <div className="flex items-center space-x-3 text-xs font-bold tracking-wider uppercase text-slate-400">
-                <span className="text-purple-600">{song.category}</span>
+              <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors mb-1">{song.title}</h3>
+              <div className="flex items-center space-x-3 text-xs font-bold tracking-wider uppercase text-slate-400 dark:text-slate-500">
+                <span className="text-purple-600 dark:text-purple-400">{song.category}</span>
                 <span>•</span>
                 <span>{song.season}</span>
               </div>
             </div>
-            <div className="w-10 h-10 rounded-full bg-purple-50 flex items-center justify-center text-purple-500 group-hover:bg-purple-100 transition-colors">
+            <div className="w-10 h-10 rounded-full bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center text-purple-500 dark:text-purple-400 group-hover:bg-purple-100 dark:group-hover:bg-purple-900/50 transition-colors">
               <FiHeart size={18} className="fill-current" />
             </div>
           </Link>

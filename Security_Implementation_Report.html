@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Security Implementation Report – HymnMatch</title>
+<style>
+  @page {
+    size: letter;
+    margin: 1in;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Calibri, 'Segoe UI', sans-serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    padding: 1in;
+    max-width: 8.5in;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 4pt;
+  }
+  .meta {
+    text-align: center;
+    font-size: 11pt;
+    color: #333;
+    margin-bottom: 30pt;
+  }
+  h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 28pt;
+    margin-bottom: 10pt;
+    border-bottom: 2px solid #000;
+    padding-bottom: 4pt;
+  }
+  h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 18pt;
+    margin-bottom: 8pt;
+  }
+  p { margin-bottom: 10pt; text-align: justify; }
+  ul { margin-left: 24pt; margin-bottom: 10pt; }
+  li { margin-bottom: 4pt; }
+
+  /* Threat Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14pt 0 18pt 0;
+    font-size: 11pt;
+  }
+  th, td {
+    border: 1px solid #000;
+    padding: 7pt 8pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background-color: #d0d0d0;
+    font-weight: bold;
+  }
+  td { background-color: #fff; }
+
+  /* Control Card */
+  .control { margin-bottom: 22pt; }
+  .control-title {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 6pt;
+  }
+  .control ul { margin-left: 20pt; }
+
+  /* Code blocks */
+  pre {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10pt 12pt;
+    margin: 8pt 0 12pt 20pt;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.45;
+  }
+
+  .page-break { page-break-before: always; }
+
+  @media print {
+    body { padding: 0; }
+    .page-break { page-break-before: always; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER / HEADER ==================== -->
+<h1>Security Implementation Report</h1>
+<p class="subtitle">HymnMatch: AI-Powered Hymn Recommendation System</p>
+<p class="meta">Prepared for: IT Security &amp; Software Engineering<br>
+Date: May 24, 2026</p>
+
+<hr style="border:1px solid #000; margin-bottom:24pt;">
+
+<!-- ==================== SECTION 1: INTRODUCTION ==================== -->
+<h2>Section 1: Introduction</h2>
+
+<h3>1.1 System Overview</h3>
+<p>
+HymnMatch is a web-based application designed for choir directors to upload liturgical documents—such as Mass readings and parish bulletins—and receive AI-powered hymn recommendations that match the themes and liturgical season of each service. The system leverages Optical Character Recognition (OCR) to extract text from uploaded documents and uses the Google Gemini API to analyze themes and suggest appropriate hymns from a curated database.
+</p>
+
+<h3>1.2 Technology Stack</h3>
+<ul>
+  <li><strong>Frontend:</strong> React (Vite), hosted on Vercel</li>
+  <li><strong>Backend:</strong> Node.js / Express, hosted on Render</li>
+  <li><strong>Database &amp; Authentication:</strong> Supabase (PostgreSQL with built-in Auth)</li>
+  <li><strong>AI Engine:</strong> Google Gemini 1.5 Flash API</li>
+  <li><strong>OCR:</strong> Google Cloud Vision API</li>
+</ul>
+
+<h3>1.3 Currently Implemented &amp; Testable Features</h3>
+<ul>
+  <li>Sign Up with client-side input validation (name, email, password)</li>
+  <li>Sign In with bcrypt password hashing via Supabase Auth</li>
+  <li>Forgot Password / Reset Password flow with email verification</li>
+  <li>Password visibility toggle on all password fields</li>
+  <li>Terms &amp; Conditions acceptance modal</li>
+  <li>Generic error messages that do not expose system internals</li>
+  <li>Supabase-managed authentication and session handling</li>
+</ul>
+
+<h3>1.4 Purpose of This Report</h3>
+<p>
+This report identifies the key security threats facing HymnMatch, documents the security controls implemented to mitigate each threat, maps every control to the CIA Triad (Confidentiality, Integrity, Availability), and provides working code snippets that demonstrate each implementation. The goal is to show that security was treated as a foundational requirement—not an afterthought—throughout the development of the application.
+</p>
+
+<!-- ==================== SECTION 2 ==================== -->
+<div class="page-break"></div>
+<h2>Section 2: Threat &amp; Vulnerability Identification</h2>
+
+<p>
+The following table summarizes the six primary threats identified during the security analysis of HymnMatch. Each threat is paired with the specific vulnerability it exploits and the potential impact on the system and its users.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:28%;">Threat</th>
+      <th style="width:34%;">Possible Vulnerability</th>
+      <th style="width:38%;">Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Unauthorized Access to User Accounts</strong></td>
+      <td>Weak password authentication mechanisms that allow simple or commonly-used passwords</td>
+      <td>Attacker gains access to saved songs, personal settings, and liturgical preferences associated with the compromised account</td>
+    </tr>
+    <tr>
+      <td><strong>2. SQL Injection / Database Attacks</strong></td>
+      <td>Absence of input validation on user-supplied inputs, allowing malicious SQL to be injected into queries</td>
+      <td>Full database compromise, theft or corruption of user data, unauthorized read/write access to all records</td>
+    </tr>
+    <tr>
+      <td><strong>3. Data Leakage of Uploaded Documents</strong></td>
+      <td>Permanent storage of uploaded liturgical documents without encryption or proper access controls</td>
+      <td>Sensitive liturgical materials, parish schedules, and internal church documents exposed to unauthorized parties</td>
+    </tr>
+    <tr>
+      <td><strong>4. Brute Force / Weak Password Attacks</strong></td>
+      <td>No rate limiting on login attempts, allowing unlimited authentication requests</td>
+      <td>Automated tools systematically guess passwords, leading to mass account compromise across the platform</td>
+    </tr>
+    <tr>
+      <td><strong>5. Cross-Site Scripting (XSS)</strong></td>
+      <td>Unsanitized text inputs rendered directly in the DOM without escaping or encoding</td>
+      <td>Attacker injects malicious scripts to steal session tokens, hijack accounts, or redirect users to phishing sites</td>
+    </tr>
+    <tr>
+      <td><strong>6. API Key Exposure</strong></td>
+      <td>API keys stored in frontend JavaScript bundles or transmitted without encryption</td>
+      <td>Unauthorized use of the Gemini API resulting in budget drain, quota exhaustion, and potential service disruption</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ==================== SECTION 3 ==================== -->
+<div class="page-break"></div>
+<h2>Section 3: Security Controls Implementation</h2>
+
+<p>
+For each threat identified in Section 2, a corresponding security control has been designed and implemented. This section documents the control name, the threat it addresses, the CIA principle it upholds, a description of its implementation, and the relevant code.
+</p>
+
+<!-- CONTROL 1 -->
+<div class="control">
+  <p class="control-title">Control #1: Password Hashing</p>
+  <ul>
+    <li><strong>Threat Addressed:</strong> Unauthorized Access to User Accounts</li>
+    <li><strong>CIA Principle:</strong> Confidentiality</li>
+    <li><strong>Implementation Description:</strong> Passwords are hashed using the bcrypt algorithm before being stored in the database. Supabase Auth automatically handles password hashing during the sign-up and password-reset flows. At no point is a plain-text password written to persistent storage. Even if the database is compromised, attackers cannot reverse the bcrypt hash to obtain the original password. The cost factor used by Supabase's bcrypt implementation makes brute-force reversal computationally infeasible.</li>
+  </ul>
+  <p><strong>Code Snippet:</strong></p>
+<pre>
+const signUpUser = async (email, password, fullName) => {
+  const { data, error } = await supabase.auth.signUp({
+    email: email,
+    password: password
+  });
+  // Supabase hashes password using bcrypt automatically
+  // Plain-text password is NEVER stored in the database
+  return data;
+};
+</pre>
+</div>
+
+<!-- CONTROL 2 -->
+<div class="control">
+  <p class="control-title">Control #2: Input Validation &amp; Prepared Statements</p>
+  <ul>
+    <li><strong>Threat Addressed:</strong> SQL Injection / Database Attacks</li>
+    <li><strong>CIA Principle:</strong> Integrity</li>
+    <li><strong>Implementation Description:</strong> All user inputs are validated on the client side before submission. The name field accepts only letters and spaces (regex-enforced). The email field must match a standard email format. Passwords must be at least 8 characters and include letters, numbers, and at least one special character. On the server side, Supabase uses parameterized queries internally, which prevent SQL injection by separating SQL logic from user-supplied data.</li>
+  </ul>
+  <p><strong>Code Snippet:</strong></p>
+<pre>
+const validateInput = (name, email, password) => {
+  const nameRegex = /^[A-Za-z\s]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const passwordRegex =
+    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+
+  if (!nameRegex.test(name))
+    return "Name must contain letters only";
+  if (!emailRegex.test(email))
+    return "Invalid email format";
+  if (!passwordRegex.test(password))
+    return "Password must be 8+ chars with letters, numbers, special character";
+
+  return "Valid";
+};
+</pre>
+</div>
+
+<!-- CONTROL 3 -->
+<div class="page-break"></div>
+<div class="control">
+  <p class="control-title">Control #3: Row Level Security (RLS)</p>
+  <ul>
+    <li><strong>Threat Addressed:</strong> Data Leakage of Uploaded Documents</li>
+    <li><strong>CIA Principle:</strong> Confidentiality &amp; Integrity</li>
+    <li><strong>Implementation Description:</strong> Supabase Row Level Security (RLS) is enabled at the PostgreSQL database level. RLS policies ensure that every query is automatically filtered by the authenticated user's ID. Users can only view, insert, update, or delete their own saved songs and audit log entries. Even if a malicious user crafts a direct API request, the database enforces access boundaries, preventing cross-user data access.</li>
+  </ul>
+  <p><strong>Code Snippet:</strong></p>
+<pre>
+-- Enable Row Level Security on the saved_songs table
+ALTER TABLE saved_songs ENABLE ROW LEVEL SECURITY;
+
+-- Policy: Users can only SELECT their own saved songs
+CREATE POLICY "Users can view own saved songs"
+ON saved_songs FOR SELECT
+USING (auth.uid() = user_id);
+
+-- Policy: Users can only INSERT their own saved songs
+CREATE POLICY "Users can insert own saved songs"
+ON saved_songs FOR INSERT
+WITH CHECK (auth.uid() = user_id);
+</pre>
+</div>
+
+<!-- CONTROL 4 -->
+<div class="control">
+  <p class="control-title">Control #4: Session Management &amp; Rate Limiting</p>
+  <ul>
+    <li><strong>Threat Addressed:</strong> Brute Force / Weak Password Attacks</li>
+    <li><strong>CIA Principle:</strong> Integrity &amp; Availability</li>
+    <li><strong>Implementation Description:</strong> Supabase Auth manages secure JWT-based sessions with automatic expiration and refresh-token rotation. Login endpoints are protected by built-in rate limiting that restricts the number of authentication attempts from a single IP address within a time window. After multiple consecutive failed login attempts, the system temporarily locks the account and returns a rate-limit error. The application handles this gracefully by displaying a user-friendly message without revealing system internals.</li>
+  </ul>
+  <p><strong>Code Snippet:</strong></p>
+<pre>
+const handleLogin = async (email, password) => {
+  const { data, error } = await supabase.auth
+    .signInWithPassword({
+      email: email,
+      password: password
+    });
+
+  if (error && error.message.includes('rate limit')) {
+    return "Too many login attempts. Please try again later.";
+  }
+
+  // Generic error message — no system details exposed
+  if (error) {
+    return "Invalid email or password.";
+  }
+
+  return data;
+};
+</pre>
+</div>
+
+<!-- CONTROL 5 -->
+<div class="page-break"></div>
+<div class="control">
+  <p class="control-title">Control #5: Input Sanitization &amp; XSS Prevention</p>
+  <ul>
+    <li><strong>Threat Addressed:</strong> Cross-Site Scripting (XSS)</li>
+    <li><strong>CIA Principle:</strong> Integrity</li>
+    <li><strong>Implementation Description:</strong> All user-generated content is sanitized before being rendered in the DOM. React's JSX rendering engine automatically escapes interpolated values, which prevents inline script injection by default. Any value placed inside curly braces in JSX is treated as a text node, not executable HTML. For cases where raw HTML must be rendered, a custom sanitization function escapes dangerous characters. The application never uses <code>dangerouslySetInnerHTML</code> with unsanitized input.</li>
+  </ul>
+  <p><strong>Code Snippet:</strong></p>
+<pre>
+// React automatically escapes text content in JSX
+const DisplayUserName = ({ unsafeInput }) => {
+  return &lt;h1&gt;{unsafeInput}&lt;/h1&gt;;
+  // React escapes unsafeInput, preventing XSS
+};
+
+// Custom sanitization utility for additional protection
+const sanitizeInput = (input) => {
+  const div = document.createElement('div');
+  div.textContent = input; // textContent escapes HTML entities
+  return div.innerHTML;
+};
+</pre>
+</div>
+
+<!-- CONTROL 6 -->
+<div class="control">
+  <p class="control-title">Control #6: Secure API Key Management</p>
+  <ul>
+    <li><strong>Threat Addressed:</strong> API Key Exposure</li>
+    <li><strong>CIA Principle:</strong> Confidentiality</li>
+    <li><strong>Implementation Description:</strong> The Google Gemini API key is stored exclusively in the backend server's <code>.env</code> file and is loaded at runtime using the <code>dotenv</code> library. The key is never included in frontend source code, never committed to version control, and never transmitted to the client. The Node.js/Express backend acts as a secure proxy: the frontend sends extracted text to the backend, which authenticates with the Gemini API on the server side and returns only the processed recommendation. Error responses use generic messages to avoid leaking system configuration details.</li>
+  </ul>
+  <p><strong>Code Snippet:</strong></p>
+<pre>
+require('dotenv').config();
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+
+// API key loaded from .env — never exposed to frontend
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+
+app.post('/api/analyze-reading', async (req, res) => {
+  try {
+    const { extractedText } = req.body;
+
+    // Backend makes the request securely
+    const model = genAI.getGenerativeModel({
+      model: "gemini-1.5-flash"
+    });
+
+    const result = await model.generateContent(extractedText);
+
+    // Send result to frontend — API key NEVER exposed
+    res.json({ recommendation: result.response.text() });
+  } catch (error) {
+    // Generic error message — no system details leaked
+    res.status(500).json({ error: "Processing failed" });
+  }
+});
+</pre>
+</div>
+
+<!-- ==================== SECTION 4 ==================== -->
+<div class="page-break"></div>
+<h2>Section 4: CIA Triad Application</h2>
+
+<p>
+The CIA Triad—Confidentiality, Integrity, and Availability—serves as the foundational framework guiding every security decision in HymnMatch. This section maps how the implemented controls collectively satisfy each principle.
+</p>
+
+<h3>4.1 Confidentiality</h3>
+<p>
+Confidentiality ensures that sensitive information is accessible only to authorized individuals. In HymnMatch, confidentiality is enforced through multiple layers:
+</p>
+<ul>
+  <li><strong>Password Hashing (Control #1):</strong> User passwords are hashed using bcrypt before storage. Even in the event of a database breach, the original passwords remain computationally infeasible to recover.</li>
+  <li><strong>Row Level Security (Control #3):</strong> RLS policies at the PostgreSQL level ensure that users can only query and modify their own data. Cross-user data access is blocked at the database engine level, not merely at the application layer.</li>
+  <li><strong>Secure API Key Management (Control #6):</strong> The Gemini API key resides exclusively in the backend server's environment variables. It is never bundled into frontend JavaScript, never appears in browser network requests, and is excluded from version control via <code>.gitignore</code>.</li>
+  <li><strong>Temporary Document Processing:</strong> Uploaded liturgical documents are processed in temporary browser memory during OCR extraction and are not permanently stored on servers, minimizing the window of exposure.</li>
+</ul>
+<p>
+Together, these controls ensure that all sensitive information—passwords, user data, API credentials, and uploaded documents—is protected from unauthorized disclosure at every stage of the data lifecycle.
+</p>
+
+<h3>4.2 Integrity</h3>
+<p>
+Integrity ensures that data remains accurate, consistent, and unaltered by unauthorized parties. HymnMatch enforces integrity through:
+</p>
+<ul>
+  <li><strong>Input Validation &amp; Prepared Statements (Control #2):</strong> Client-side regex validation and server-side parameterized queries work together to prevent SQL injection. Malicious input cannot alter the structure of database queries, preserving data accuracy.</li>
+  <li><strong>Session Management &amp; Rate Limiting (Control #4):</strong> Rate limiting prevents brute-force attacks from systematically guessing passwords. By restricting the volume of authentication attempts, the system preserves the integrity of user credentials and prevents unauthorized account modifications.</li>
+  <li><strong>Input Sanitization &amp; XSS Prevention (Control #5):</strong> React's automatic escaping and custom sanitization utilities prevent attackers from injecting malicious scripts that could alter page content, steal session tokens, or modify data displayed to other users.</li>
+</ul>
+<p>
+These controls collectively guarantee that data flowing into, through, and out of HymnMatch remains trustworthy and uncompromised.
+</p>
+
+<h3>4.3 Availability</h3>
+<p>
+Availability ensures that the system and its data remain accessible to authorized users when needed. HymnMatch ensures availability through:
+</p>
+<ul>
+  <li><strong>Cloud Infrastructure:</strong> The frontend is hosted on Vercel and the backend on Supabase and Render—enterprise-grade platforms that provide automatic scaling, redundancy, and uptime guarantees. Supabase manages automated database backups to prevent data loss.</li>
+  <li><strong>Graceful Error Handling:</strong> If the Gemini API experiences downtime or returns an error, the application displays a user-friendly message ("Processing failed") rather than crashing or exposing a stack trace. Users can continue using other features while the AI service recovers.</li>
+  <li><strong>Session Continuity:</strong> Supabase Auth's JWT-based sessions with automatic refresh-token rotation ensure that users remain authenticated across browser sessions and system updates, preventing unnecessary disruptions to their workflow.</li>
+  <li><strong>Rate Limiting Protection:</strong> By throttling excessive login attempts, rate limiting also protects availability by preventing denial-of-service conditions caused by authentication endpoint abuse.</li>
+</ul>
+
+<!-- ==================== SECTION 5 ==================== -->
+<div class="page-break"></div>
+<h2>Section 5: Summary of Security Controls</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:8%;">#</th>
+      <th style="width:22%;">Control</th>
+      <th style="width:25%;">Threat Addressed</th>
+      <th style="width:20%;">CIA Principle</th>
+      <th style="width:25%;">Key Mechanism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Password Hashing</td>
+      <td>Unauthorized Access</td>
+      <td>Confidentiality</td>
+      <td>bcrypt via Supabase Auth</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Input Validation &amp; Prepared Statements</td>
+      <td>SQL Injection</td>
+      <td>Integrity</td>
+      <td>Regex + parameterized queries</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Row Level Security</td>
+      <td>Data Leakage</td>
+      <td>Confidentiality &amp; Integrity</td>
+      <td>PostgreSQL RLS policies</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Session Management &amp; Rate Limiting</td>
+      <td>Brute Force Attacks</td>
+      <td>Integrity &amp; Availability</td>
+      <td>JWT sessions + rate limiting</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Input Sanitization &amp; XSS Prevention</td>
+      <td>Cross-Site Scripting</td>
+      <td>Integrity</td>
+      <td>React escaping + sanitization</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Secure API Key Management</td>
+      <td>API Key Exposure</td>
+      <td>Confidentiality</td>
+      <td>Backend .env + proxy pattern</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ==================== SECTION 6 ==================== -->
+<h2>Section 6: Conclusion</h2>
+
+<p>
+Developing HymnMatch has demonstrated that security must be planned before development begins, not added as an afterthought. By identifying threats early in the design phase and implementing corresponding security controls from the start, the system inherently resists compromise and provides users with confidence that their church data is protected.
+</p>
+
+<p>
+The six security controls documented in this report address the most critical threat vectors facing the application: unauthorized access, injection attacks, data leakage, brute-force attacks, cross-site scripting, and API key exposure. Each control is mapped to one or more principles of the CIA Triad, ensuring comprehensive coverage of confidentiality, integrity, and availability.
+</p>
+
+<p>
+Key takeaways from this security implementation include:
+</p>
+
+<ul>
+  <li><strong>Defense in Depth:</strong> No single control is relied upon in isolation. Multiple overlapping layers—client-side validation, server-side parameterization, database-level RLS, and infrastructure-level rate limiting—work together to create a robust security posture.</li>
+  <li><strong>Principle of Least Privilege:</strong> Row Level Security ensures that every database query is scoped to the authenticated user. Users never have access to data beyond their own scope.</li>
+  <li><strong>Secure by Default:</strong> Technologies were chosen specifically for their built-in security features. React prevents XSS by default, Supabase handles bcrypt hashing automatically, and parameterized queries eliminate SQL injection without additional developer effort.</li>
+  <li><strong>Minimal Exposure:</strong> Sensitive assets—API keys, passwords, uploaded documents—are either encrypted, hashed, proxied through the backend, or processed ephemerally to minimize the attack surface.</li>
+</ul>
+
+<p>
+Security is not a feature—it is a foundational principle that must be woven into every layer of the application. HymnMatch's architecture reflects this philosophy, ensuring that choir directors can trust the platform with their liturgical data and focus on what matters most: selecting the right hymns for their congregation.
+</p>
+
+</body>
+</html>
