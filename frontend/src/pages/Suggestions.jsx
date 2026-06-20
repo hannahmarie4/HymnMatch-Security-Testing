@@ -249,7 +249,7 @@ export default function Suggestions() {
                         <Link 
                           to="/song-detail" 
                           state={{ song, theme, tone, category: category.title }} 
-                          className="text-lg font-bold text-slate-800 dark:text-slate-100 hover:text-purple-700 dark:hover:text-purple-400 transition-colors inline-flex items-center space-x-2"
+                          className="text-lg font-bold text-slate-900 dark:text-slate-100 hover:text-purple-700 dark:hover:text-purple-400 transition-colors inline-flex items-center space-x-2"
                         >
                           <span>{song.title}</span>
                           <FiMusic size={14} className="text-slate-400 group-hover:text-purple-500 transition-colors" />

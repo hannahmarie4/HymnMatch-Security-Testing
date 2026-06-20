@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { FiCamera, FiFileText, FiStar, FiClock, FiX, FiAlertTriangle, FiCheck, FiRotateCcw, FiLoader } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import Tesseract from 'tesseract.js';
+import { useAuth } from '../context/AuthContext';
 
 // ── Device Detection ─────────────────────────────────────────────────────────
 const isMobileDevice = () =>
@@ -69,6 +70,7 @@ const formatBytes = (b) =>
 export default function Upload() {
   const navigate = useNavigate();
   const isMobile = isMobileDevice();
+  const { addAuditLog } = useAuth();
 
   // refs for hidden inputs
   const cameraInputRef = useRef(null);  // mobile camera capture
@@ -278,7 +280,7 @@ export default function Upload() {
 
       setProcessingStatus('Fetching Song Suggestions...');
 
-      const response = await fetch('http://localhost:5000/api/recommendations', {
+      const response = await fetch('http://127.0.0.1:5000/api/recommendations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -290,13 +292,24 @@ export default function Upload() {
       });
 
       if (!response.ok) {
-        throw new Error('Server returned an error generating recommendations.');
+        // Read the actual JSON error body from the backend instead of discarding it
+        let errBody = {};
+        try { errBody = await response.json(); } catch (_) { /* non-JSON body */ }
+        const phase = errBody.phase ? ` [${errBody.phase}]` : '';
+        const hint  = errBody.hint  ? ` — ${errBody.hint}`  : '';
+        const msg   = errBody.error || `Server error (HTTP ${response.status})`;
+        console.error(`[Upload] Backend error${phase}:`, msg + hint);
+        throw new Error(`${msg}${hint}`);
       }
 
-      const data = await response.json();
+       const data = await response.json();
       
       // Store raw JSON array in sessionStorage
       sessionStorage.setItem('hymnmatch_results', JSON.stringify(data));
+      
+      if (typeof addAuditLog === 'function') {
+        addAuditLog('Liturgical Analysis', `Analyzed document for "${season}".`);
+      }
       
       setFlow('idle');
       navigate('/suggestions');

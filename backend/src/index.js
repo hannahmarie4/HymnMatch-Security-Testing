@@ -10,8 +10,10 @@ app.use(express.json({ limit: '10mb' }));
 const PORT = process.env.PORT || 5000;
 const { loginLimiter } = require('./middleware/rateLimiter');
 const recommendationsRouter = require('./routes/recommendations');
+const readingsRouter = require('./routes/readings');
 
 app.use('/api/recommendations', recommendationsRouter);
+app.use('/api/readings', readingsRouter);
 
 app.get('/', (req, res) => {
     res.send('HymnMatch Secure Backend is Running!');

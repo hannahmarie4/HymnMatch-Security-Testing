@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 
 export default function DashboardLayout() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-indigo-50 dark:from-slate-950 dark:via-purple-950/20 dark:to-slate-900 text-slate-900 dark:text-slate-100 flex relative overflow-hidden transition-colors duration-300">
       {/* Decorative background shapes */}
@@ -12,10 +15,10 @@ export default function DashboardLayout() {
       </div>
 
       {/* Fixed Sidebar */}
-      <Sidebar />
+      <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
       
       {/* Main Content Area */}
-      <div className="flex-1 ml-64 p-8 relative z-10">
+      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} p-8 relative z-10 transition-all duration-300`}>
         <Outlet />
       </div>
     </div>
