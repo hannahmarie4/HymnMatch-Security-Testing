@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { FiHeart, FiMinus } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import mockSongDatabase from '../data/mockSongDatabase';
 
 export default function SavedSongs() {
   const { savedSongs: songs, setSavedSongs: setSongs, addAuditLog } = useAuth();
@@ -83,25 +84,36 @@ export default function SavedSongs() {
       </div>
 
       <div className="space-y-3">
-        {songs.map((song) => (
-          <div
-            key={song.id}
-            className={`transition-all duration-300 transform origin-center ${
-              song.isDeleting
-                ? 'opacity-0 scale-95 max-h-0 py-0 my-0 border-0 overflow-hidden pointer-events-none'
-                : 'opacity-100 scale-100 max-h-40'
-            }`}
-          >
-            <Link
-              to="/song-detail"
-              state={{
-                song: { title: song.title, composer: 'Traditional', match: 95 },
-                theme: song.season,
-                tone: 'Liturgical',
-                category: song.category,
-                fromSaved: true // Block False Redirection indicator
-              }}
-              className="flex items-center justify-between bg-white dark:bg-slate-800/80 rounded-2xl p-5 border border-slate-100 dark:border-slate-700/40 shadow-sm hover:shadow-md hover:border-purple-200 dark:hover:border-purple-800/50 transition-all group"
+        {songs.map((song) => {
+          const dbSong = mockSongDatabase.find(s => 
+            s.title.toLowerCase().replace(/[^a-z0-9]/g, '') === song.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+          ) || {};
+          
+          return (
+            <div
+              key={song.id}
+              className={`transition-all duration-300 transform origin-center ${
+                song.isDeleting
+                  ? 'opacity-0 scale-95 max-h-0 py-0 my-0 border-0 overflow-hidden pointer-events-none'
+                  : 'opacity-100 scale-100 max-h-40'
+              }`}
+            >
+              <Link
+                to="/song-detail"
+                state={{
+                  song: { 
+                    title: song.title, 
+                    composer: song.composer || dbSong.composer || 'Traditional', 
+                    match: song.match || dbSong.match || 95,
+                    lyrics: song.lyrics || dbSong.lyrics 
+                  },
+                  theme: song.theme || dbSong.theme || song.season,
+                  tone: song.tone || dbSong.tone || 'Liturgical',
+                  category: song.category || dbSong.category,
+                  liturgical_season: song.season || dbSong.liturgical_season || 'Ordinary Time',
+                  fromSaved: true // Block False Redirection indicator
+                }}
+                className="flex items-center justify-between bg-white dark:bg-slate-800/80 rounded-2xl p-5 border border-slate-100 dark:border-slate-700/40 shadow-sm hover:shadow-md hover:border-purple-200 dark:hover:border-purple-800/50 transition-all group"
             >
               <div>
                 <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors mb-1">
@@ -131,7 +143,8 @@ export default function SavedSongs() {
               </div>
             </Link>
           </div>
-        ))}
+          );
+        })}
         {songs.length === 0 && (
           <div className="text-center py-12 text-slate-500 dark:text-slate-400">
             <p className="text-lg font-medium">No saved songs yet.</p>

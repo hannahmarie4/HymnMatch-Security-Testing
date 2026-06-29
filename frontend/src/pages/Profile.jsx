@@ -30,6 +30,10 @@ export default function Profile() {
   const [showTermsModal, setShowTermsModal] = useState(false);
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
 
+  const [showUploadsModal, setShowUploadsModal] = useState(false);
+  const [uploadsHistory, setUploadsHistory] = useState([]);
+  const [expandedHymnKey, setExpandedHymnKey] = useState(null);
+
   const [passwordValidation, setPasswordValidation] = useState({
     hasMinLength: false,
     hasUppercase: false,
@@ -136,6 +140,39 @@ export default function Profile() {
     setPasswordError('');
     setPasswordSuccess('');
     setShowChangePasswordModal(true);
+  };
+
+  const openUploadsModal = () => {
+    const historyData = localStorage.getItem('hymnmatch_upload_history');
+    let historyList = [];
+    if (historyData) {
+      try {
+        historyList = JSON.parse(historyData);
+      } catch (e) {
+        historyList = [];
+      }
+    }
+    
+    // Fallback: If history list is empty but single lastUploadedResults exists, migrate it
+    if (historyList.length === 0) {
+      const singleData = localStorage.getItem('lastUploadedResults');
+      if (singleData) {
+        try {
+          const parsed = JSON.parse(singleData);
+          historyList = [{
+            id: parsed.id || Date.now() * 1000 + Math.floor(Math.random() * 1000),
+            filename: parsed.filename,
+            hymns: parsed.hymns,
+            timestamp: parsed.timestamp,
+            created_at: parsed.timestamp || new Date().toISOString()
+          }];
+        } catch (_) {}
+      }
+    }
+
+    setUploadsHistory(historyList);
+    setExpandedHymnKey(null);
+    setShowUploadsModal(true);
   };
 
   const handleUpdateName = async (e) => {
@@ -257,7 +294,7 @@ export default function Profile() {
       <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-8 tracking-tight">Profile & Settings</h1>
 
       {/* User Info & Activity Stats (US-027) */}
-      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-8 mb-8 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+      <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-8 mb-8 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 mb-8 pb-8 border-b border-slate-100 dark:border-slate-800">
           <div className="relative">
             <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-100 to-indigo-100 border-4 border-white shadow-md flex items-center justify-center text-purple-600 text-3xl font-bold">
@@ -287,7 +324,7 @@ export default function Profile() {
 
       <div className="grid grid-cols-1 gap-6">
         {/* Account Section (US-027, US-028) */}
-        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <FiUser size={20} />
@@ -320,8 +357,31 @@ export default function Profile() {
           </div>
         </div>
 
+        {/* Data & History Section */}
+        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-400">
+              <FiUpload size={20} />
+            </div>
+            <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100">Data &amp; History</h3>
+          </div>
+          
+          <div className="space-y-2">
+            <button 
+              onClick={openUploadsModal}
+              className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group"
+            >
+              <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-300 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                <FiFileText size={18} />
+                <span className="font-medium">Uploaded Files</span>
+              </div>
+              <FiInfo size={14} className="text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </button>
+          </div>
+        </div>
+
         {/* Legal & About Section (US-031, US-032) */}
-        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800/50 flex items-center justify-center text-slate-600 dark:text-slate-400">
               <FiFileText size={20} />
@@ -359,15 +419,6 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="mt-10 flex justify-center">
-        <button 
-          onClick={signOut}
-          className="flex items-center space-x-2 px-8 py-4 bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-400 rounded-2xl font-bold hover:bg-red-100 dark:hover:bg-red-900/30 hover:shadow-lg hover:shadow-red-500/10 transition-all transform hover:-translate-y-0.5"
-        >
-          <FiLogOut size={20} />
-          <span>Log Out</span>
-        </button>
-      </div>
 
       {/* Edit Name Modal */}
       {showEditNameModal && (
@@ -616,55 +667,55 @@ export default function Profile() {
                 <FiX size={24} />
               </button>
             </div>
-            <div className="p-6 overflow-y-auto flex-1 text-sm text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
-              <p className="font-medium text-slate-800 dark:text-slate-250">Last updated: March 2026</p>
+            <div className="p-6 overflow-y-auto flex-1 text-sm text-slate-700 dark:text-slate-200 leading-relaxed space-y-4">
+              <p className="font-medium text-slate-800 dark:text-slate-200">Last updated: March 2026</p>
               
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">1. Acceptance of Terms</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">1. Acceptance of Terms</h3>
                 <p>By accessing and using HymnMatch, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use this service.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">2. Use of Service</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">2. Use of Service</h3>
                 <p>HymnMatch is designed exclusively for liturgical and church music planning purposes. You agree to use this service only for its intended purpose of selecting hymns for religious services. Commercial resale or redistribution of AI-generated recommendations is strictly prohibited.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">3. User Accounts</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">3. User Accounts</h3>
                 <p>You are responsible for maintaining the confidentiality of your account credentials. You agree to provide accurate and complete information during registration. Each user is permitted one account only.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">4. Uploaded Documents</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">4. Uploaded Documents</h3>
                 <p>Documents and images you upload are processed in temporary memory only and are not permanently stored on our servers. You retain full ownership of all content you upload. By uploading, you confirm you have the right to use and share the content for music planning purposes.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">5. AI-Generated Recommendations</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">5. AI-Generated Recommendations</h3>
                 <p>Song recommendations are generated by artificial intelligence and are meant to assist, not replace, your liturgical judgment. HymnMatch does not guarantee the doctrinal accuracy or appropriateness of any recommendation. Final song selection remains solely your responsibility.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">6. Intellectual Property</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">6. Intellectual Property</h3>
                 <p>HymnMatch and its original content, features, and functionality are the property of the HymnMatch development team. Lyrics displayed are used for reference purposes only.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">7. Limitation of Liability</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">7. Limitation of Liability</h3>
                 <p>HymnMatch is provided as-is without warranties of any kind. We are not liable for any decisions made based on AI-generated recommendations or any disruption of service.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">8. Changes to Terms</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">8. Changes to Terms</h3>
                 <p>We reserve the right to update these Terms at any time. Continued use of the service after changes constitutes acceptance of the new Terms.</p>
               </div>
 
-              <p className="pt-2 font-medium text-slate-850 dark:text-slate-150">Contact: hymnmatch.support@gmail.com</p>
+              <p className="pt-2 font-medium text-slate-700 dark:text-slate-200">Contact: hymnmatch.support@gmail.com</p>
             </div>
             <div className="p-5 border-t border-slate-100 dark:border-slate-800 flex justify-end">
               <button 
                 onClick={() => setShowTermsModal(false)}
-                className="px-6 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-350 font-bold rounded-xl transition-colors focus:outline-none"
+                className="bg-purple-600 hover:bg-purple-700 text-white rounded-xl px-4 py-2 font-bold transition-colors focus:outline-none"
               >
                 Close
               </button>
@@ -686,18 +737,18 @@ export default function Profile() {
                 <FiX size={24} />
               </button>
             </div>
-            <div className="p-6 overflow-y-auto flex-1 text-sm text-slate-600 dark:text-slate-350 leading-relaxed space-y-4">
-              <p className="font-medium text-slate-800 dark:text-slate-250">Last updated: May 2026</p>
+            <div className="p-6 overflow-y-auto flex-1 text-sm text-slate-700 dark:text-slate-200 leading-relaxed space-y-4">
+              <p className="font-medium text-slate-800 dark:text-slate-200">Last updated: May 2026</p>
               
-              <div className="p-4 bg-purple-50 dark:bg-purple-950/20 border border-purple-100 dark:border-purple-900/30 rounded-2xl text-purple-950 dark:text-purple-300 font-medium animate-fadeIn">
-                <h3 className="font-bold mb-1">RA 10173 Compliance Declaration</h3>
+              <div className="p-4 bg-purple-50 dark:bg-purple-950/20 border border-purple-100 dark:border-purple-900/30 rounded-2xl text-purple-950 dark:text-purple-250 font-medium animate-fadeIn">
+                <h3 className="font-bold mb-1 text-purple-900 dark:text-purple-200">RA 10173 Compliance Declaration</h3>
                 <p>In strict compliance with the Republic Act No. 10173, also known as the Data Privacy Act of 2012, HymnMatch ensures that all personal and liturgical information collected is processed securely, transparently, and lawfully. Your information will only be accessed for the purpose of personalized hymn recommendations and profile planning.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">1. Information We Collect</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">1. Information We Collect</h3>
                 <p>We collect the following personal information:</p>
-                <ul className="list-disc pl-5 mt-1 space-y-1">
+                <ul className="list-disc pl-5 mt-1 space-y-1 text-slate-700 dark:text-slate-200">
                   <li>Full name (for account identification)</li>
                   <li>Email address (for authentication and password recovery)</li>
                   <li>Liturgical preferences (default season setting)</li>
@@ -706,9 +757,9 @@ export default function Profile() {
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">2. How We Use Your Information</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">2. How We Use Your Information</h3>
                 <p>Your information is used solely to:</p>
-                <ul className="list-disc pl-5 mt-1 space-y-1">
+                <ul className="list-disc pl-5 mt-1 space-y-1 text-slate-700 dark:text-slate-200">
                   <li>Provide and improve the HymnMatch service</li>
                   <li>Authenticate your identity securely</li>
                   <li>Send password reset emails when requested</li>
@@ -717,24 +768,24 @@ export default function Profile() {
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">3. Data Storage and Security</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">3. Data Storage and Security</h3>
                 <p>Your account data is stored securely in Supabase, a PostgreSQL-based platform with enterprise-grade security. Uploaded liturgical documents are processed in temporary browser memory only and are never permanently stored on our servers.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">4. Data Sharing</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">4. Data Sharing</h3>
                 <p>We do not sell, trade, or share your personal information with third parties. Your data is never used for advertising purposes.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">5. Cookies and Sessions</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">5. Cookies and Sessions</h3>
                 <p>HymnMatch uses secure session tokens for authentication purposes only. We do not use tracking cookies or third-party analytics.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">6. Your Rights</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">6. Your Rights</h3>
                 <p>You have the right to:</p>
-                <ul className="list-disc pl-5 mt-1 space-y-1">
+                <ul className="list-disc pl-5 mt-1 space-y-1 text-slate-700 dark:text-slate-200">
                   <li>Access your personal data</li>
                   <li>Request correction of inaccurate data</li>
                   <li>Request deletion of your account and data</li>
@@ -743,18 +794,103 @@ export default function Profile() {
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">7. Data Retention</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">7. Data Retention</h3>
                 <p>Your data is retained as long as your account is active. Upon account deletion, all personal data is permanently removed within 30 days.</p>
               </div>
 
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">8. Contact Us</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">8. Contact Us</h3>
                 <p>For privacy concerns or data requests, contact us at: <br/><strong>hymnmatch.support@gmail.com</strong></p>
               </div>
             </div>
             <div className="p-5 border-t border-slate-100 dark:border-slate-800 flex justify-end">
               <button 
                 onClick={() => setShowPrivacyModal(false)}
+                className="bg-purple-600 hover:bg-purple-700 text-white rounded-xl px-4 py-2 font-bold transition-colors focus:outline-none"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Uploaded Files Modal */}
+      {showUploadsModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] flex flex-col animate-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-800">
+              <h2 className="text-xl font-bold text-slate-900 dark:text-white">Uploaded Files</h2>
+              <button 
+                onClick={() => setShowUploadsModal(false)}
+                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors focus:outline-none"
+              >
+                <FiX size={24} />
+              </button>
+            </div>
+            <div className="p-6 overflow-y-auto flex-1 space-y-6 max-h-[600px]">
+              {uploadsHistory && uploadsHistory.length > 0 ? (
+                <div className="space-y-8">
+                  {uploadsHistory
+                    .slice()
+                    .sort((a, b) => new Date(b.created_at || b.timestamp) - new Date(a.created_at || a.timestamp))
+                    .map((upload, uIdx) => (
+                      <div key={upload.id || uIdx} className="space-y-4 pb-6 border-b last:border-b-0 border-slate-100 dark:border-slate-800">
+                        {/* File Box with Metadata */}
+                        <div className="p-4 bg-purple-50 dark:bg-purple-950/20 border border-purple-100 dark:border-purple-900/30 rounded-2xl">
+                          <p className="text-xs font-bold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-1">Filename</p>
+                          <p className="text-slate-800 dark:text-slate-200 font-bold">{upload.filename}</p>
+                          <p className="text-xs text-slate-500 mt-1">{new Date(upload.created_at || upload.timestamp).toLocaleString()}</p>
+                        </div>
+                        
+                        {/* Recommendations Section */}
+                        <div className="pl-1">
+                          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3">Extracted Hymns</h3>
+                          <div className="space-y-2">
+                            {upload.hymns && upload.hymns.length > 0 ? (
+                              upload.hymns.map((hymn, hIdx) => {
+                                const hymnKey = `${upload.id || uIdx}-${hIdx}`;
+                                const isExpanded = expandedHymnKey === hymnKey;
+                                
+                                return (
+                                  <div key={hIdx} className="border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/30 dark:bg-slate-900/20">
+                                    <button 
+                                      onClick={() => setExpandedHymnKey(isExpanded ? null : hymnKey)}
+                                      className="w-full p-4 flex items-center justify-between bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800 transition-colors text-left"
+                                    >
+                                      <div>
+                                        <p className="font-bold text-slate-800 dark:text-slate-200">{hymn.title}</p>
+                                        <p className="text-xs text-slate-500">{hymn.mass_part || hymn.category} • {hymn.composer}</p>
+                                      </div>
+                                      <span className="text-purple-600 dark:text-purple-400 text-sm font-bold ml-2">Lyrics</span>
+                                    </button>
+                                    {isExpanded && (
+                                      <div className="p-4 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-350 whitespace-pre-wrap leading-relaxed font-serif">
+                                        {hymn.lyrics}
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })
+                            ) : (
+                              <p className="text-xs text-slate-400 italic">No recommendations found for this document.</p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
+              ) : (
+                <div className="text-center py-8 text-slate-500 dark:text-slate-400">
+                  <FiFileText size={48} className="mx-auto mb-4 opacity-50" />
+                  <p>No upload history found in this session.</p>
+                </div>
+              )}
+            </div>
+            <div className="p-5 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+              <button 
+                onClick={() => setShowUploadsModal(false)}
                 className="px-6 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-350 font-bold rounded-xl transition-colors focus:outline-none"
               >
                 Close

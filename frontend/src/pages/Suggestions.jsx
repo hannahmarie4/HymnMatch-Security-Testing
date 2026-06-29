@@ -220,7 +220,7 @@ export default function Suggestions() {
         </button>
       </div>
 
-      <div className="bg-white/80 dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 mb-10 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 mb-10 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none">
         <p className="text-purple-600 dark:text-purple-400 text-xs font-bold tracking-wider uppercase mb-1">Identified Theme</p>
         <p className="text-slate-800 dark:text-slate-200 font-bold text-xl">{theme}</p>
         <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Tone: {tone}</p>

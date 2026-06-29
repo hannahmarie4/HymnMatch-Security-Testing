@@ -1,0 +1,7527 @@
+[
+  {
+    "dateCode": "0101",
+    "month": "January",
+    "monthNum": 1,
+    "day": 1,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "The Blessed Virgin Mary, the Mother of God",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary, the Mother of God",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0102",
+    "month": "January",
+    "monthNum": 1,
+    "day": 2,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Saint Basil the Great and Saint Gregory Nazianzen, bishops and doctors of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Basil the Great and Saint Gregory Nazianzen, bishops and doctors of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0103",
+    "month": "January",
+    "monthNum": 1,
+    "day": 3,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Saturday of Christmas Time",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "The Most Holy Name of Jesus",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Most Holy Name of Jesus",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0104",
+    "month": "January",
+    "monthNum": 1,
+    "day": 4,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "The Epiphany of the Lord",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Epiphany of the Lord",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0105",
+    "month": "January",
+    "monthNum": 1,
+    "day": 5,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Monday after Epiphany",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday after Epiphany",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0106",
+    "month": "January",
+    "monthNum": 1,
+    "day": 6,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Tuesday after Epiphany",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday after Epiphany",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0107",
+    "month": "January",
+    "monthNum": 1,
+    "day": 7,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Wednesday after Epiphany",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Raymond of Penyafort, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Raymond of Penyafort, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0108",
+    "month": "January",
+    "monthNum": 1,
+    "day": 8,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Thursday after Epiphany",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday after Epiphany",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0109",
+    "month": "January",
+    "monthNum": 1,
+    "day": 9,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Our Lord Jesus Christ, Señor Jesus Nazareno",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lord Jesus Christ, Señor Jesus Nazareno",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0110",
+    "month": "January",
+    "monthNum": 1,
+    "day": 10,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Saturday after Epiphany",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday after Epiphany",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0111",
+    "month": "January",
+    "monthNum": 1,
+    "day": 11,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "The Baptism of the Lord",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Baptism of the Lord",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0112",
+    "month": "January",
+    "monthNum": 1,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 1ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 1ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0113",
+    "month": "January",
+    "monthNum": 1,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 1ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Hilary, bishop and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Hilary, bishop and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0114",
+    "month": "January",
+    "monthNum": 1,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 1ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 1ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0115",
+    "month": "January",
+    "monthNum": 1,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 1ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 1ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0116",
+    "month": "January",
+    "monthNum": 1,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 1ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 1ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0117",
+    "month": "January",
+    "monthNum": 1,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Anthony, abbot",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Anthony, abbot",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0118",
+    "month": "January",
+    "monthNum": 1,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Santo Niño",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Santo Niño",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0119",
+    "month": "January",
+    "monthNum": 1,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 2ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 2ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0120",
+    "month": "January",
+    "monthNum": 1,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 2ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Fabian, pope and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint Sebastian, martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Fabian, pope and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0121",
+    "month": "January",
+    "monthNum": 1,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Agnes, virgin and martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Agnes, virgin and martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0122",
+    "month": "January",
+    "monthNum": 1,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 2ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Vincent, deacon and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Vincent, deacon and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0123",
+    "month": "January",
+    "monthNum": 1,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 2ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 2ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0124",
+    "month": "January",
+    "monthNum": 1,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Francis de Sales, bishop and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Francis de Sales, bishop and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0125",
+    "month": "January",
+    "monthNum": 1,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "3ʳᵈ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "3ʳᵈ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0126",
+    "month": "January",
+    "monthNum": 1,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Timothy and Saint Titus, bishops",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Timothy and Saint Titus, bishops",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0127",
+    "month": "January",
+    "monthNum": 1,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 3ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Angela Merici, virgin",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Angela Merici, virgin",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0128",
+    "month": "January",
+    "monthNum": 1,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Thomas Aquinas, priest and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Thomas Aquinas, priest and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0129",
+    "month": "January",
+    "monthNum": 1,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 3ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 3ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0130",
+    "month": "January",
+    "monthNum": 1,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 3ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 3ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0131",
+    "month": "January",
+    "monthNum": 1,
+    "day": 31,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint John Bosco, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John Bosco, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0201",
+    "month": "February",
+    "monthNum": 2,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "4ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "4ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0202",
+    "month": "February",
+    "monthNum": 2,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Presentation of the Lord",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Presentation of the Lord",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0203",
+    "month": "February",
+    "monthNum": 2,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 4ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Ansgar, bishop",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Blase, bishop and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Ansgar, bishop",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0204",
+    "month": "February",
+    "monthNum": 2,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 4ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 4ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0205",
+    "month": "February",
+    "monthNum": 2,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Agatha, virgin and martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Agatha, virgin and martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0206",
+    "month": "February",
+    "monthNum": 2,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saints Pedro Baustista, Paul Miki and companions, martyrs",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saints Pedro Baustista, Paul Miki and companions, martyrs",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0207",
+    "month": "February",
+    "monthNum": 2,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 4ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0208",
+    "month": "February",
+    "monthNum": 2,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "5ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "5ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0209",
+    "month": "February",
+    "monthNum": 2,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 5ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 5ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0210",
+    "month": "February",
+    "monthNum": 2,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Scholastica, virgin",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Scholastica, virgin",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0211",
+    "month": "February",
+    "monthNum": 2,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 5ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Our Lady of Lourdes",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of Lourdes",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0212",
+    "month": "February",
+    "monthNum": 2,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 5ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 5ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0213",
+    "month": "February",
+    "monthNum": 2,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 5ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 5ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0214",
+    "month": "February",
+    "monthNum": 2,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Cyril, monk, and Saint Methodius, bishop",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Cyril, monk, and Saint Methodius, bishop",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0215",
+    "month": "February",
+    "monthNum": 2,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "6ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "6ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0216",
+    "month": "February",
+    "monthNum": 2,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 6ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 6ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0217",
+    "month": "February",
+    "monthNum": 2,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 6ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Seven Founders of the Order of Servites, religious",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Seven Founders of the Order of Servites, religious",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0218",
+    "month": "February",
+    "monthNum": 2,
+    "day": 18,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Ash Wednesday",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Ash Wednesday",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0219",
+    "month": "February",
+    "monthNum": 2,
+    "day": 19,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Thursday after Ash Wednesday",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday after Ash Wednesday",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0220",
+    "month": "February",
+    "monthNum": 2,
+    "day": 20,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Friday after Ash Wednesday",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday after Ash Wednesday",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0221",
+    "month": "February",
+    "monthNum": 2,
+    "day": 21,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saturday after Ash Wednesday",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Peter Damian, bishop and doctor of the Church",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday after Ash Wednesday",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0222",
+    "month": "February",
+    "monthNum": 2,
+    "day": 22,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "1ˢᵗ Sunday of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "1ˢᵗ Sunday of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0223",
+    "month": "February",
+    "monthNum": 2,
+    "day": 23,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Monday in the 1ˢᵗ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Polycarp, bishop and martyr",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 1ˢᵗ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0224",
+    "month": "February",
+    "monthNum": 2,
+    "day": 24,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Tuesday in the 1ˢᵗ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 1ˢᵗ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0225",
+    "month": "February",
+    "monthNum": 2,
+    "day": 25,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Wednesday in the 1ˢᵗ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 1ˢᵗ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0226",
+    "month": "February",
+    "monthNum": 2,
+    "day": 26,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Thursday in the 1ˢᵗ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 1ˢᵗ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0227",
+    "month": "February",
+    "monthNum": 2,
+    "day": 27,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Friday in the 1ˢᵗ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Gregory of Narek, abbot and doctor of the Church",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 1ˢᵗ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0228",
+    "month": "February",
+    "monthNum": 2,
+    "day": 28,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saturday in the 1ˢᵗ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 1ˢᵗ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0301",
+    "month": "March",
+    "monthNum": 3,
+    "day": 1,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "2ⁿᵈ Sunday of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "2ⁿᵈ Sunday of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0302",
+    "month": "March",
+    "monthNum": 3,
+    "day": 2,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Monday in the 2ⁿᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 2ⁿᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0303",
+    "month": "March",
+    "monthNum": 3,
+    "day": 3,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Tuesday in the 2ⁿᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 2ⁿᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0304",
+    "month": "March",
+    "monthNum": 3,
+    "day": 4,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Wednesday in the 2ⁿᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Casimir",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 2ⁿᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0305",
+    "month": "March",
+    "monthNum": 3,
+    "day": 5,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Thursday in the 2ⁿᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 2ⁿᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0306",
+    "month": "March",
+    "monthNum": 3,
+    "day": 6,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Friday in the 2ⁿᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 2ⁿᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0307",
+    "month": "March",
+    "monthNum": 3,
+    "day": 7,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saturday in the 2ⁿᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Perpetua and Saint Felicity, martyrs",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 2ⁿᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0308",
+    "month": "March",
+    "monthNum": 3,
+    "day": 8,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "3ʳᵈ Sunday of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "3ʳᵈ Sunday of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0309",
+    "month": "March",
+    "monthNum": 3,
+    "day": 9,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Monday in the 3ʳᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Frances of Rome, religious",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 3ʳᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0310",
+    "month": "March",
+    "monthNum": 3,
+    "day": 10,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Tuesday in the 3ʳᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 3ʳᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0311",
+    "month": "March",
+    "monthNum": 3,
+    "day": 11,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Wednesday in the 3ʳᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 3ʳᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0312",
+    "month": "March",
+    "monthNum": 3,
+    "day": 12,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Thursday in the 3ʳᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 3ʳᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0313",
+    "month": "March",
+    "monthNum": 3,
+    "day": 13,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Friday in the 3ʳᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 3ʳᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0314",
+    "month": "March",
+    "monthNum": 3,
+    "day": 14,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saturday in the 3ʳᵈ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 3ʳᵈ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0315",
+    "month": "March",
+    "monthNum": 3,
+    "day": 15,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "4ᵗʰ Sunday of Lent (Laetare)",
+        "type": "Feria",
+        "color": "rose"
+      }
+    ],
+    "primaryEvent": {
+      "title": "4ᵗʰ Sunday of Lent (Laetare)",
+      "type": "Feria",
+      "color": "rose"
+    }
+  },
+  {
+    "dateCode": "0316",
+    "month": "March",
+    "monthNum": 3,
+    "day": 16,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Monday in the 4ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 4ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0317",
+    "month": "March",
+    "monthNum": 3,
+    "day": 17,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Tuesday in the 4ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Patrick, bishop",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 4ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0318",
+    "month": "March",
+    "monthNum": 3,
+    "day": 18,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Wednesday in the 4ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Cyril of Jerusalem, bishop and doctor of the Church",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 4ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0319",
+    "month": "March",
+    "monthNum": 3,
+    "day": 19,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saint Joseph, husband of Mary",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Joseph, husband of Mary",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0320",
+    "month": "March",
+    "monthNum": 3,
+    "day": 20,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Friday in the 4ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 4ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0321",
+    "month": "March",
+    "monthNum": 3,
+    "day": 21,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saturday in the 4ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 4ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0322",
+    "month": "March",
+    "monthNum": 3,
+    "day": 22,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "5ᵗʰ Sunday of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "5ᵗʰ Sunday of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0323",
+    "month": "March",
+    "monthNum": 3,
+    "day": 23,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Monday in the 5ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Turibius de Mongrovejo, bishop",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 5ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0324",
+    "month": "March",
+    "monthNum": 3,
+    "day": 24,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Tuesday in the 5ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 5ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0325",
+    "month": "March",
+    "monthNum": 3,
+    "day": 25,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "The Annunciation of the Lord",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Annunciation of the Lord",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0326",
+    "month": "March",
+    "monthNum": 3,
+    "day": 26,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Thursday in the 5ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 5ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0327",
+    "month": "March",
+    "monthNum": 3,
+    "day": 27,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Friday in the 5ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 5ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0328",
+    "month": "March",
+    "monthNum": 3,
+    "day": 28,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Saturday in the 5ᵗʰ Week of Lent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 5ᵗʰ Week of Lent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0329",
+    "month": "March",
+    "monthNum": 3,
+    "day": 29,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Palm Sunday of the Lord’s Passion",
+        "type": "Feria",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Palm Sunday of the Lord’s Passion",
+      "type": "Feria",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0330",
+    "month": "March",
+    "monthNum": 3,
+    "day": 30,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Monday of Holy Week",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday of Holy Week",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0331",
+    "month": "March",
+    "monthNum": 3,
+    "day": 31,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Tuesday of Holy Week",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday of Holy Week",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0401",
+    "month": "April",
+    "monthNum": 4,
+    "day": 1,
+    "season": "Lent",
+    "events": [
+      {
+        "title": "Wednesday of Holy Week",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday of Holy Week",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "0402",
+    "month": "April",
+    "monthNum": 4,
+    "day": 2,
+    "season": "Paschal Triduum",
+    "events": [
+      {
+        "title": "Holy Thursday of the Lord’s Supper",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Holy Thursday of the Lord’s Supper",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0403",
+    "month": "April",
+    "monthNum": 4,
+    "day": 3,
+    "season": "Paschal Triduum",
+    "events": [
+      {
+        "title": "Good Friday of the Lord’s Passion",
+        "type": "Feria",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Good Friday of the Lord’s Passion",
+      "type": "Feria",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0404",
+    "month": "April",
+    "monthNum": 4,
+    "day": 4,
+    "season": "Paschal Triduum",
+    "events": [
+      {
+        "title": "Holy Saturday",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Holy Saturday",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0405",
+    "month": "April",
+    "monthNum": 4,
+    "day": 5,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Easter Sunday of the Lord’s Resurrection",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Easter Sunday of the Lord’s Resurrection",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0406",
+    "month": "April",
+    "monthNum": 4,
+    "day": 6,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the Octave of Easter",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the Octave of Easter",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0407",
+    "month": "April",
+    "monthNum": 4,
+    "day": 7,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the Octave of Easter",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the Octave of Easter",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0408",
+    "month": "April",
+    "monthNum": 4,
+    "day": 8,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Wednesday in the Octave of Easter",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the Octave of Easter",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0409",
+    "month": "April",
+    "monthNum": 4,
+    "day": 9,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Thursday in the Octave of Easter",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the Octave of Easter",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0410",
+    "month": "April",
+    "monthNum": 4,
+    "day": 10,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Friday in the Octave of Easter",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the Octave of Easter",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0411",
+    "month": "April",
+    "monthNum": 4,
+    "day": 11,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saturday in the Octave of Easter",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the Octave of Easter",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0412",
+    "month": "April",
+    "monthNum": 4,
+    "day": 12,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "2ⁿᵈ Sunday of Easter (Divine Mercy)",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "2ⁿᵈ Sunday of Easter (Divine Mercy)",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0413",
+    "month": "April",
+    "monthNum": 4,
+    "day": 13,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the 2ⁿᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Martin I, pope and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Martin I, pope and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0414",
+    "month": "April",
+    "monthNum": 4,
+    "day": 14,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the 2ⁿᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 2ⁿᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0415",
+    "month": "April",
+    "monthNum": 4,
+    "day": 15,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Wednesday in the 2ⁿᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 2ⁿᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0416",
+    "month": "April",
+    "monthNum": 4,
+    "day": 16,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Thursday in the 2ⁿᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 2ⁿᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0417",
+    "month": "April",
+    "monthNum": 4,
+    "day": 17,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Friday in the 2ⁿᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 2ⁿᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0418",
+    "month": "April",
+    "monthNum": 4,
+    "day": 18,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saturday in the 2ⁿᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 2ⁿᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0419",
+    "month": "April",
+    "monthNum": 4,
+    "day": 19,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "3ʳᵈ Sunday of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "3ʳᵈ Sunday of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0420",
+    "month": "April",
+    "monthNum": 4,
+    "day": 20,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the 3ʳᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 3ʳᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0421",
+    "month": "April",
+    "monthNum": 4,
+    "day": 21,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the 3ʳᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Anselm, bishop and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Anselm, bishop and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0422",
+    "month": "April",
+    "monthNum": 4,
+    "day": 22,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Wednesday in the 3ʳᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 3ʳᵈ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0423",
+    "month": "April",
+    "monthNum": 4,
+    "day": 23,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Thursday in the 3ʳᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Adalbert, bishop and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint George, martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Adalbert, bishop and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0424",
+    "month": "April",
+    "monthNum": 4,
+    "day": 24,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Friday in the 3ʳᵈ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Fidelis of Sigmaringen, priest and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Fidelis of Sigmaringen, priest and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0425",
+    "month": "April",
+    "monthNum": 4,
+    "day": 25,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saint Mark, evangelist",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Mark, evangelist",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0426",
+    "month": "April",
+    "monthNum": 4,
+    "day": 26,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "4ᵗʰ Sunday of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "4ᵗʰ Sunday of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0427",
+    "month": "April",
+    "monthNum": 4,
+    "day": 27,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the 4ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 4ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0428",
+    "month": "April",
+    "monthNum": 4,
+    "day": 28,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the 4ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Louis Grignion de Montfort, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Peter Chanel, priest and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Louis Grignion de Montfort, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0429",
+    "month": "April",
+    "monthNum": 4,
+    "day": 29,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saint Catherine of Siena, virgin and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Catherine of Siena, virgin and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0430",
+    "month": "April",
+    "monthNum": 4,
+    "day": 30,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Thursday in the 4ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Pius V, pope",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Pius V, pope",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0501",
+    "month": "May",
+    "monthNum": 5,
+    "day": 1,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Friday in the 4ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Joseph the Worker",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Joseph the Worker",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0502",
+    "month": "May",
+    "monthNum": 5,
+    "day": 2,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saint Athanasius, bishop and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Athanasius, bishop and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0503",
+    "month": "May",
+    "monthNum": 5,
+    "day": 3,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "5ᵗʰ Sunday of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "5ᵗʰ Sunday of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0504",
+    "month": "May",
+    "monthNum": 5,
+    "day": 4,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the 5ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 5ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0505",
+    "month": "May",
+    "monthNum": 5,
+    "day": 5,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the 5ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 5ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0506",
+    "month": "May",
+    "monthNum": 5,
+    "day": 6,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Wednesday in the 5ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 5ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0507",
+    "month": "May",
+    "monthNum": 5,
+    "day": 7,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Thursday in the 5ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 5ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0508",
+    "month": "May",
+    "monthNum": 5,
+    "day": 8,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Friday in the 5ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 5ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0509",
+    "month": "May",
+    "monthNum": 5,
+    "day": 9,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saturday in the 5ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 5ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0510",
+    "month": "May",
+    "monthNum": 5,
+    "day": 10,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "6ᵗʰ Sunday of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "6ᵗʰ Sunday of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0511",
+    "month": "May",
+    "monthNum": 5,
+    "day": 11,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the 6ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 6ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0512",
+    "month": "May",
+    "monthNum": 5,
+    "day": 12,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the 6ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Nereus and Saint Achilleus, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint Pancras, martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Nereus and Saint Achilleus, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0513",
+    "month": "May",
+    "monthNum": 5,
+    "day": 13,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Wednesday in the 6ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Our Lady of Fatima",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of Fatima",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0514",
+    "month": "May",
+    "monthNum": 5,
+    "day": 14,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saint Matthias, apostle",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Matthias, apostle",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0515",
+    "month": "May",
+    "monthNum": 5,
+    "day": 15,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saint Isidore the Farmer",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Isidore the Farmer",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0516",
+    "month": "May",
+    "monthNum": 5,
+    "day": 16,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saturday in the 6ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 6ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0517",
+    "month": "May",
+    "monthNum": 5,
+    "day": 17,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Ascension of the Lord",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Ascension of the Lord",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0518",
+    "month": "May",
+    "monthNum": 5,
+    "day": 18,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Monday in the 7ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint John I, pope and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John I, pope and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0519",
+    "month": "May",
+    "monthNum": 5,
+    "day": 19,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Tuesday in the 7ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 7ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0520",
+    "month": "May",
+    "monthNum": 5,
+    "day": 20,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Wednesday in the 7ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Bernardine of Siena, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Bernardine of Siena, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0521",
+    "month": "May",
+    "monthNum": 5,
+    "day": 21,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Thursday in the 7ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Christopher Magallanes, priest, and companions, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Christopher Magallanes, priest, and companions, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0522",
+    "month": "May",
+    "monthNum": 5,
+    "day": 22,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Friday in the 7ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Rita of Cassia, religious",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Rita of Cassia, religious",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0523",
+    "month": "May",
+    "monthNum": 5,
+    "day": 23,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Saturday in the 7ᵗʰ Week of Easter",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 7ᵗʰ Week of Easter",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0524",
+    "month": "May",
+    "monthNum": 5,
+    "day": 24,
+    "season": "Easter Time",
+    "events": [
+      {
+        "title": "Pentecost Sunday",
+        "type": "Solemnity",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Pentecost Sunday",
+      "type": "Solemnity",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0525",
+    "month": "May",
+    "monthNum": 5,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Blessed Virgin Mary, Mother of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary, Mother of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0526",
+    "month": "May",
+    "monthNum": 5,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Philip Neri, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Philip Neri, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0527",
+    "month": "May",
+    "monthNum": 5,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 8ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Augustine of Canterbury, bishop",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Augustine of Canterbury, bishop",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0528",
+    "month": "May",
+    "monthNum": 5,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Our Lord Jesus Christ, the Eternal High Priest",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lord Jesus Christ, the Eternal High Priest",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0529",
+    "month": "May",
+    "monthNum": 5,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 8ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Paul VI, pope",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Paul VI, pope",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0530",
+    "month": "May",
+    "monthNum": 5,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 8ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0531",
+    "month": "May",
+    "monthNum": 5,
+    "day": 31,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Most Holy Trinity",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Most Holy Trinity",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0601",
+    "month": "June",
+    "monthNum": 6,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Justin, martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Justin, martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0602",
+    "month": "June",
+    "monthNum": 6,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 9ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Marcellinus and Saint Peter, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Marcellinus and Saint Peter, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0603",
+    "month": "June",
+    "monthNum": 6,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Charles Lwanga and companions, martyrs",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Charles Lwanga and companions, martyrs",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0604",
+    "month": "June",
+    "monthNum": 6,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 9ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 9ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0605",
+    "month": "June",
+    "monthNum": 6,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Boniface, bishop and martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Boniface, bishop and martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0606",
+    "month": "June",
+    "monthNum": 6,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 9ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Norbert, bishop",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Norbert, bishop",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0607",
+    "month": "June",
+    "monthNum": 6,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Most Holy Body and Blood of Christ",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Most Holy Body and Blood of Christ",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0608",
+    "month": "June",
+    "monthNum": 6,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 10ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 10ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0609",
+    "month": "June",
+    "monthNum": 6,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 10ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Ephrem, deacon and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Ephrem, deacon and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0610",
+    "month": "June",
+    "monthNum": 6,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 10ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 10ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0611",
+    "month": "June",
+    "monthNum": 6,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Barnabas, apostle",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Barnabas, apostle",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0612",
+    "month": "June",
+    "monthNum": 6,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Most Sacred Heart of Jesus",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Most Sacred Heart of Jesus",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0613",
+    "month": "June",
+    "monthNum": 6,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Immaculate Heart of the Blessed Virgin Mary",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Immaculate Heart of the Blessed Virgin Mary",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0614",
+    "month": "June",
+    "monthNum": 6,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "11ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "11ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0615",
+    "month": "June",
+    "monthNum": 6,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 11ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 11ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0616",
+    "month": "June",
+    "monthNum": 6,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 11ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 11ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0617",
+    "month": "June",
+    "monthNum": 6,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 11ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 11ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0618",
+    "month": "June",
+    "monthNum": 6,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 11ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 11ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0619",
+    "month": "June",
+    "monthNum": 6,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 11ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Romuald, abbot",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Romuald, abbot",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0620",
+    "month": "June",
+    "monthNum": 6,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 11ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0621",
+    "month": "June",
+    "monthNum": 6,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "12ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "12ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0622",
+    "month": "June",
+    "monthNum": 6,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 12ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint John Fisher, bishop, and Saint Thomas More, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint Paulinus of Nola, bishop",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John Fisher, bishop, and Saint Thomas More, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0623",
+    "month": "June",
+    "monthNum": 6,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 12ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 12ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0624",
+    "month": "June",
+    "monthNum": 6,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Nativity of Saint John the Baptist",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Nativity of Saint John the Baptist",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0625",
+    "month": "June",
+    "monthNum": 6,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 12ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 12ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0626",
+    "month": "June",
+    "monthNum": 6,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 12ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 12ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0627",
+    "month": "June",
+    "monthNum": 6,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 12ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Cyril of Alexandria, bishop and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Cyril of Alexandria, bishop and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0628",
+    "month": "June",
+    "monthNum": 6,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "13ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "13ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0629",
+    "month": "June",
+    "monthNum": 6,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Peter and Saint Paul, apostles",
+        "type": "Solemnity",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Peter and Saint Paul, apostles",
+      "type": "Solemnity",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0630",
+    "month": "June",
+    "monthNum": 6,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 13ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The First Martyrs of the Church of Rome",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The First Martyrs of the Church of Rome",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0701",
+    "month": "July",
+    "monthNum": 7,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 13ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 13ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0702",
+    "month": "July",
+    "monthNum": 7,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 13ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 13ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0703",
+    "month": "July",
+    "monthNum": 7,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Thomas, apostle",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Thomas, apostle",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0704",
+    "month": "July",
+    "monthNum": 7,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 13ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Elizabeth of Portugal",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Elizabeth of Portugal",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0705",
+    "month": "July",
+    "monthNum": 7,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "14ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "14ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0706",
+    "month": "July",
+    "monthNum": 7,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 14ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Maria Goretti, virgin and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Maria Goretti, virgin and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0707",
+    "month": "July",
+    "monthNum": 7,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 14ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 14ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0708",
+    "month": "July",
+    "monthNum": 7,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 14ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 14ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0709",
+    "month": "July",
+    "monthNum": 7,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 14ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Augustine Zhao Rong, priest, and companions, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Augustine Zhao Rong, priest, and companions, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0710",
+    "month": "July",
+    "monthNum": 7,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 14ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 14ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0711",
+    "month": "July",
+    "monthNum": 7,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Benedict, abbot",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Benedict, abbot",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0712",
+    "month": "July",
+    "monthNum": 7,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "15ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "15ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0713",
+    "month": "July",
+    "monthNum": 7,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 15ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Henry",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Henry",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0714",
+    "month": "July",
+    "monthNum": 7,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 15ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Camillus de Lellis, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Camillus de Lellis, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0715",
+    "month": "July",
+    "monthNum": 7,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Bonaventure, bishop and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Bonaventure, bishop and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0716",
+    "month": "July",
+    "monthNum": 7,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 15ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Our Lady of Mount Carmel",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of Mount Carmel",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0717",
+    "month": "July",
+    "monthNum": 7,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 15ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 15ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0718",
+    "month": "July",
+    "monthNum": 7,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 15ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0719",
+    "month": "July",
+    "monthNum": 7,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "16ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "16ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0720",
+    "month": "July",
+    "monthNum": 7,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 16ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Apollinaris, bishop and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Apollinaris, bishop and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0721",
+    "month": "July",
+    "monthNum": 7,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 16ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Lawrence of Brindisi, priest and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Lawrence of Brindisi, priest and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0722",
+    "month": "July",
+    "monthNum": 7,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Mary Magdalene",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Mary Magdalene",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0723",
+    "month": "July",
+    "monthNum": 7,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 16ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Bridget, religious",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Bridget, religious",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0724",
+    "month": "July",
+    "monthNum": 7,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 16ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Sharbel Makhluf, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Sharbel Makhluf, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0725",
+    "month": "July",
+    "monthNum": 7,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint James, apostle",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint James, apostle",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0726",
+    "month": "July",
+    "monthNum": 7,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "17ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "17ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0727",
+    "month": "July",
+    "monthNum": 7,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 17ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 17ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0728",
+    "month": "July",
+    "monthNum": 7,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 17ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 17ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0729",
+    "month": "July",
+    "monthNum": 7,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Martha, Saint Mary and Saint Lazarus",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Martha, Saint Mary and Saint Lazarus",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0730",
+    "month": "July",
+    "monthNum": 7,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 17ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Peter Chrysologus, bishop and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Peter Chrysologus, bishop and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0731",
+    "month": "July",
+    "monthNum": 7,
+    "day": 31,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Ignatius of Loyola, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Ignatius of Loyola, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0801",
+    "month": "August",
+    "monthNum": 8,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Alphonsus Liguori, bishop and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Alphonsus Liguori, bishop and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0802",
+    "month": "August",
+    "monthNum": 8,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "18ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "18ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0803",
+    "month": "August",
+    "monthNum": 8,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 18ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 18ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0804",
+    "month": "August",
+    "monthNum": 8,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint John Vianney, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John Vianney, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0805",
+    "month": "August",
+    "monthNum": 8,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 18ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Dedication of the Basilica of Saint Mary Major in Rome",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Dedication of the Basilica of Saint Mary Major in Rome",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0806",
+    "month": "August",
+    "monthNum": 8,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Transfiguration of the Lord",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Transfiguration of the Lord",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0807",
+    "month": "August",
+    "monthNum": 8,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 18ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Cajetan, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Sixtus II, pope, and companions, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Cajetan, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0808",
+    "month": "August",
+    "monthNum": 8,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Dominic, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Dominic, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0809",
+    "month": "August",
+    "monthNum": 8,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "19ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "19ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0810",
+    "month": "August",
+    "monthNum": 8,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Lawrence, deacon and martyr",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Lawrence, deacon and martyr",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0811",
+    "month": "August",
+    "monthNum": 8,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Clare, virgin",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Clare, virgin",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0812",
+    "month": "August",
+    "monthNum": 8,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 19ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Jane Frances de Chantal, religious",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Jane Frances de Chantal, religious",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0813",
+    "month": "August",
+    "monthNum": 8,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 19ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Pontian, pope, and Saint Hippolytus, priest, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Pontian, pope, and Saint Hippolytus, priest, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0814",
+    "month": "August",
+    "monthNum": 8,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Maximilian Kolbe, priest and martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Maximilian Kolbe, priest and martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0815",
+    "month": "August",
+    "monthNum": 8,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Assumption of the Blessed Virgin Mary",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Assumption of the Blessed Virgin Mary",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0816",
+    "month": "August",
+    "monthNum": 8,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "20ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "20ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0817",
+    "month": "August",
+    "monthNum": 8,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 20ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 20ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0818",
+    "month": "August",
+    "monthNum": 8,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 20ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 20ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0819",
+    "month": "August",
+    "monthNum": 8,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 20ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Ezequiel Moreno Díaz, bishop",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint John Eudes, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Ezequiel Moreno Díaz, bishop",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0820",
+    "month": "August",
+    "monthNum": 8,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Bernard, abbot and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Bernard, abbot and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0821",
+    "month": "August",
+    "monthNum": 8,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Pius X, pope",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Pius X, pope",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0822",
+    "month": "August",
+    "monthNum": 8,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Queenship of the Blessed Virgin Mary",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Queenship of the Blessed Virgin Mary",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0823",
+    "month": "August",
+    "monthNum": 8,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "21ˢᵗ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "21ˢᵗ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0824",
+    "month": "August",
+    "monthNum": 8,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Bartholomew, apostle",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Bartholomew, apostle",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0825",
+    "month": "August",
+    "monthNum": 8,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 21ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Joseph Calasanz, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Louis",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Joseph Calasanz, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0826",
+    "month": "August",
+    "monthNum": 8,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 21ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 21ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0827",
+    "month": "August",
+    "monthNum": 8,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Monica",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Monica",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0828",
+    "month": "August",
+    "monthNum": 8,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Augustine, bishop and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Augustine, bishop and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0829",
+    "month": "August",
+    "monthNum": 8,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Passion of Saint John the Baptist, martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Passion of Saint John the Baptist, martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0830",
+    "month": "August",
+    "monthNum": 8,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "22ⁿᵈ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "22ⁿᵈ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0831",
+    "month": "August",
+    "monthNum": 8,
+    "day": 31,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 22ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 22ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0901",
+    "month": "September",
+    "monthNum": 9,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 22ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 22ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0902",
+    "month": "September",
+    "monthNum": 9,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 22ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 22ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0903",
+    "month": "September",
+    "monthNum": 9,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Gregory the Great, pope and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Gregory the Great, pope and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0904",
+    "month": "September",
+    "monthNum": 9,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 22ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 22ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0905",
+    "month": "September",
+    "monthNum": 9,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 22ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Teresa of Calcutta, virgin",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Teresa of Calcutta, virgin",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0906",
+    "month": "September",
+    "monthNum": 9,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "23ʳᵈ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "23ʳᵈ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0907",
+    "month": "September",
+    "monthNum": 9,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 23ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 23ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0908",
+    "month": "September",
+    "monthNum": 9,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Nativity of the Blessed Virgin Mary",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Nativity of the Blessed Virgin Mary",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0909",
+    "month": "September",
+    "monthNum": 9,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 23ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Peter Claver, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Peter Claver, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0910",
+    "month": "September",
+    "monthNum": 9,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 23ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 23ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0911",
+    "month": "September",
+    "monthNum": 9,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 23ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 23ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0912",
+    "month": "September",
+    "monthNum": 9,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 23ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Most Holy Name of Mary",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Most Holy Name of Mary",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0913",
+    "month": "September",
+    "monthNum": 9,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "24ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "24ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0914",
+    "month": "September",
+    "monthNum": 9,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Exaltation of the Holy Cross",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Exaltation of the Holy Cross",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0915",
+    "month": "September",
+    "monthNum": 9,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Our Lady of Sorrows",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of Sorrows",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0916",
+    "month": "September",
+    "monthNum": 9,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Cornelius, pope, and Saint Cyprian, bishop, martyrs",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Cornelius, pope, and Saint Cyprian, bishop, martyrs",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0917",
+    "month": "September",
+    "monthNum": 9,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 24ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Hildegard of Bingen, virgin and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Robert Bellarmine, bishop and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Hildegard of Bingen, virgin and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0918",
+    "month": "September",
+    "monthNum": 9,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 24ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 24ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0919",
+    "month": "September",
+    "monthNum": 9,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 24ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Januarius, bishop and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Januarius, bishop and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0920",
+    "month": "September",
+    "monthNum": 9,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "25ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "25ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0921",
+    "month": "September",
+    "monthNum": 9,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Matthew, apostle and evangelist",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Matthew, apostle and evangelist",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0922",
+    "month": "September",
+    "monthNum": 9,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 25ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 25ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0923",
+    "month": "September",
+    "monthNum": 9,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Pius of Pietrelcina, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Pius of Pietrelcina, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0924",
+    "month": "September",
+    "monthNum": 9,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 25ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 25ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0925",
+    "month": "September",
+    "monthNum": 9,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 25ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 25ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0926",
+    "month": "September",
+    "monthNum": 9,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 25ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Cosmas and Saint Damian, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Cosmas and Saint Damian, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0927",
+    "month": "September",
+    "monthNum": 9,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "26ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "26ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "0928",
+    "month": "September",
+    "monthNum": 9,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Lawrence Ruiz and companions, martyrs",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Lawrence Ruiz and companions, martyrs",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "0929",
+    "month": "September",
+    "monthNum": 9,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Michael, Saint Gabriel, and Saint Raphael, archangels",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Michael, Saint Gabriel, and Saint Raphael, archangels",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "0930",
+    "month": "September",
+    "monthNum": 9,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Jerome, priest and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Jerome, priest and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1001",
+    "month": "October",
+    "monthNum": 10,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Thérèse of the Child Jesus, virgin and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Thérèse of the Child Jesus, virgin and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1002",
+    "month": "October",
+    "monthNum": 10,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Holy Guardian Angels",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Holy Guardian Angels",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1003",
+    "month": "October",
+    "monthNum": 10,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 26ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1004",
+    "month": "October",
+    "monthNum": 10,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "27ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "27ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1005",
+    "month": "October",
+    "monthNum": 10,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 27ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Faustina Kowalska, virgin",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Faustina Kowalska, virgin",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1006",
+    "month": "October",
+    "monthNum": 10,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 27ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Bruno, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Bruno, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1007",
+    "month": "October",
+    "monthNum": 10,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Our Lady of the Rosary",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of the Rosary",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1008",
+    "month": "October",
+    "monthNum": 10,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 27ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 27ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1009",
+    "month": "October",
+    "monthNum": 10,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 27ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Denis, bishop, and companions, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint John Henry Newman, priest and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint John Leonardi, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Denis, bishop, and companions, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1010",
+    "month": "October",
+    "monthNum": 10,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 27ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1011",
+    "month": "October",
+    "monthNum": 10,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "28ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "28ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1012",
+    "month": "October",
+    "monthNum": 10,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 28ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 28ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1013",
+    "month": "October",
+    "monthNum": 10,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 28ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 28ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1014",
+    "month": "October",
+    "monthNum": 10,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 28ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Callistus I, pope and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Callistus I, pope and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1015",
+    "month": "October",
+    "monthNum": 10,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Teresa of Jesus, virgin and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Teresa of Jesus, virgin and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1016",
+    "month": "October",
+    "monthNum": 10,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 28ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Hedwig, religious",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Margaret Mary Alacoque, virgin",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Hedwig, religious",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1017",
+    "month": "October",
+    "monthNum": 10,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Ignatius of Antioch, bishop and martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Ignatius of Antioch, bishop and martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1018",
+    "month": "October",
+    "monthNum": 10,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "29ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "29ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1019",
+    "month": "October",
+    "monthNum": 10,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 29ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint John de Brébeuf, Saint Isaac Jogues, priests, and companions, martyrs",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint Paul of the Cross, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John de Brébeuf, Saint Isaac Jogues, priests, and companions, martyrs",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1020",
+    "month": "October",
+    "monthNum": 10,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 29ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 29ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1021",
+    "month": "October",
+    "monthNum": 10,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Pedro Calungsod, martyr",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Pedro Calungsod, martyr",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1022",
+    "month": "October",
+    "monthNum": 10,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 29ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint John Paul II, pope",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John Paul II, pope",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1023",
+    "month": "October",
+    "monthNum": 10,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 29ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint John of Capistrano, priest",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John of Capistrano, priest",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1024",
+    "month": "October",
+    "monthNum": 10,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 29ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Anthony Mary Claret, bishop",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Anthony Mary Claret, bishop",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1025",
+    "month": "October",
+    "monthNum": 10,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "30ᵗʰ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "30ᵗʰ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1026",
+    "month": "October",
+    "monthNum": 10,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 30ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Monday in the 30ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1027",
+    "month": "October",
+    "monthNum": 10,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 30ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 30ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1028",
+    "month": "October",
+    "monthNum": 10,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Simon and Saint Jude, apostles",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Simon and Saint Jude, apostles",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1029",
+    "month": "October",
+    "monthNum": 10,
+    "day": 29,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 30ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 30ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1030",
+    "month": "October",
+    "monthNum": 10,
+    "day": 30,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 30ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 30ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1031",
+    "month": "October",
+    "monthNum": 10,
+    "day": 31,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 30ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1101",
+    "month": "November",
+    "monthNum": 11,
+    "day": 1,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "All Saints",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "All Saints",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1102",
+    "month": "November",
+    "monthNum": 11,
+    "day": 2,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Commemoration of all the Faithful Departed (All Souls)",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Commemoration of all the Faithful Departed (All Souls)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1103",
+    "month": "November",
+    "monthNum": 11,
+    "day": 3,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Tuesday in the 31ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Martin de Porres, religious",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Martin de Porres, religious",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1104",
+    "month": "November",
+    "monthNum": 11,
+    "day": 4,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Charles Borromeo, bishop",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Charles Borromeo, bishop",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1105",
+    "month": "November",
+    "monthNum": 11,
+    "day": 5,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 31ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 31ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1106",
+    "month": "November",
+    "monthNum": 11,
+    "day": 6,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 31ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 31ˢᵗ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1107",
+    "month": "November",
+    "monthNum": 11,
+    "day": 7,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 31ˢᵗ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1108",
+    "month": "November",
+    "monthNum": 11,
+    "day": 8,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "32ⁿᵈ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "32ⁿᵈ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1109",
+    "month": "November",
+    "monthNum": 11,
+    "day": 9,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Dedication of the Lateran Basilica in Rome",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Dedication of the Lateran Basilica in Rome",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1110",
+    "month": "November",
+    "monthNum": 11,
+    "day": 10,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Leo the Great, pope and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Leo the Great, pope and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1111",
+    "month": "November",
+    "monthNum": 11,
+    "day": 11,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Martin of Tours, bishop",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Martin of Tours, bishop",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1112",
+    "month": "November",
+    "monthNum": 11,
+    "day": 12,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Josaphat, bishop and martyr",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Josaphat, bishop and martyr",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1113",
+    "month": "November",
+    "monthNum": 11,
+    "day": 13,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 32ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 32ⁿᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1114",
+    "month": "November",
+    "monthNum": 11,
+    "day": 14,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 32ⁿᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1115",
+    "month": "November",
+    "monthNum": 11,
+    "day": 15,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "33ʳᵈ Sunday in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "33ʳᵈ Sunday in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1116",
+    "month": "November",
+    "monthNum": 11,
+    "day": 16,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 33ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Gertrude, virgin",
+        "type": "Optional Memorial",
+        "color": "white"
+      },
+      {
+        "title": "Saint Margaret of Scotland",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Gertrude, virgin",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1117",
+    "month": "November",
+    "monthNum": 11,
+    "day": 17,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Elizabeth of Hungary, religious",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Elizabeth of Hungary, religious",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1118",
+    "month": "November",
+    "monthNum": 11,
+    "day": 18,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 33ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Dedication of the Basilicas of Saint Peter and Saint Paul in Rome, apostles",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Dedication of the Basilicas of Saint Peter and Saint Paul in Rome, apostles",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1119",
+    "month": "November",
+    "monthNum": 11,
+    "day": 19,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 33ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 33ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1120",
+    "month": "November",
+    "monthNum": 11,
+    "day": 20,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 33ʳᵈ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 33ʳᵈ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1121",
+    "month": "November",
+    "monthNum": 11,
+    "day": 21,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "The Presentation of the Blessed Virgin Mary",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Presentation of the Blessed Virgin Mary",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1122",
+    "month": "November",
+    "monthNum": 11,
+    "day": 22,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Our Lord Jesus Christ, King of the Universe",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1123",
+    "month": "November",
+    "monthNum": 11,
+    "day": 23,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Monday in the 34ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Clement I, pope and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      },
+      {
+        "title": "Saint Columban, abbot",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Clement I, pope and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1124",
+    "month": "November",
+    "monthNum": 11,
+    "day": 24,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saint Andrew Dung-Lac, priest, and companions, martyrs",
+        "type": "Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Andrew Dung-Lac, priest, and companions, martyrs",
+      "type": "Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1125",
+    "month": "November",
+    "monthNum": 11,
+    "day": 25,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Wednesday in the 34ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "Saint Catherine of Alexandria, virgin and martyr",
+        "type": "Optional Memorial",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Catherine of Alexandria, virgin and martyr",
+      "type": "Optional Memorial",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1126",
+    "month": "November",
+    "monthNum": 11,
+    "day": 26,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Thursday in the 34ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Thursday in the 34ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1127",
+    "month": "November",
+    "monthNum": 11,
+    "day": 27,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Friday in the 34ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Friday in the 34ᵗʰ Week in Ordinary Time",
+      "type": "Feria",
+      "color": "green"
+    }
+  },
+  {
+    "dateCode": "1128",
+    "month": "November",
+    "monthNum": 11,
+    "day": 28,
+    "season": "Ordinary Time",
+    "events": [
+      {
+        "title": "Saturday in the 34ᵗʰ Week in Ordinary Time",
+        "type": "Feria",
+        "color": "green"
+      },
+      {
+        "title": "The Blessed Virgin Mary on Saturday",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Blessed Virgin Mary on Saturday",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1129",
+    "month": "November",
+    "monthNum": 11,
+    "day": 29,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "1ˢᵗ Sunday of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "1ˢᵗ Sunday of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1130",
+    "month": "November",
+    "monthNum": 11,
+    "day": 30,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Saint Andrew, apostle",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Andrew, apostle",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1201",
+    "month": "December",
+    "monthNum": 12,
+    "day": 1,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Tuesday in the 1ˢᵗ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 1ˢᵗ Week of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1202",
+    "month": "December",
+    "monthNum": 12,
+    "day": 2,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Wednesday in the 1ˢᵗ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 1ˢᵗ Week of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1203",
+    "month": "December",
+    "monthNum": 12,
+    "day": 3,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Saint Francis Xavier, priest",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Francis Xavier, priest",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1204",
+    "month": "December",
+    "monthNum": 12,
+    "day": 4,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Friday in the 1ˢᵗ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint John Damascene, priest and doctor of the Church",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John Damascene, priest and doctor of the Church",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1205",
+    "month": "December",
+    "monthNum": 12,
+    "day": 5,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Saturday in the 1ˢᵗ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saturday in the 1ˢᵗ Week of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1206",
+    "month": "December",
+    "monthNum": 12,
+    "day": 6,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "2ⁿᵈ Sunday of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "2ⁿᵈ Sunday of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1207",
+    "month": "December",
+    "monthNum": 12,
+    "day": 7,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Saint Ambrose, bishop and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Ambrose, bishop and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1208",
+    "month": "December",
+    "monthNum": 12,
+    "day": 8,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "The Immaculate Conception of the Blessed Virgin Mary",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Immaculate Conception of the Blessed Virgin Mary",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1209",
+    "month": "December",
+    "monthNum": 12,
+    "day": 9,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Wednesday in the 2ⁿᵈ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Juan Diego Cuauhtlatoatzin",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Juan Diego Cuauhtlatoatzin",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1210",
+    "month": "December",
+    "monthNum": 12,
+    "day": 10,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Thursday in the 2ⁿᵈ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Our Lady of Loreto",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of Loreto",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1211",
+    "month": "December",
+    "monthNum": 12,
+    "day": 11,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Friday in the 2ⁿᵈ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Damasus I, pope",
+        "type": "Optional Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Damasus I, pope",
+      "type": "Optional Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1212",
+    "month": "December",
+    "monthNum": 12,
+    "day": 12,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Our Lady of Guadalupe",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Our Lady of Guadalupe",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1213",
+    "month": "December",
+    "monthNum": 12,
+    "day": 13,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "3ʳᵈ Sunday of Advent (Gaudete)",
+        "type": "Feria",
+        "color": "rose"
+      }
+    ],
+    "primaryEvent": {
+      "title": "3ʳᵈ Sunday of Advent (Gaudete)",
+      "type": "Feria",
+      "color": "rose"
+    }
+  },
+  {
+    "dateCode": "1214",
+    "month": "December",
+    "monthNum": 12,
+    "day": 14,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Saint John of the Cross, priest and doctor of the Church",
+        "type": "Memorial",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint John of the Cross, priest and doctor of the Church",
+      "type": "Memorial",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1215",
+    "month": "December",
+    "monthNum": 12,
+    "day": 15,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Tuesday in the 3ʳᵈ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Tuesday in the 3ʳᵈ Week of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1216",
+    "month": "December",
+    "monthNum": 12,
+    "day": 16,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Wednesday in the 3ʳᵈ Week of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Wednesday in the 3ʳᵈ Week of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1217",
+    "month": "December",
+    "monthNum": 12,
+    "day": 17,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 17)",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 17)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1218",
+    "month": "December",
+    "monthNum": 12,
+    "day": 18,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 18)",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 18)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1219",
+    "month": "December",
+    "monthNum": 12,
+    "day": 19,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 19)",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 19)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1220",
+    "month": "December",
+    "monthNum": 12,
+    "day": 20,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "4ᵗʰ Sunday of Advent",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "4ᵗʰ Sunday of Advent",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1221",
+    "month": "December",
+    "monthNum": 12,
+    "day": 21,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 21)",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint Peter Canisius, priest and doctor of the Church",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 21)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1222",
+    "month": "December",
+    "monthNum": 12,
+    "day": 22,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 22)",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 22)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1223",
+    "month": "December",
+    "monthNum": 12,
+    "day": 23,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 23)",
+        "type": "Feria",
+        "color": "violet"
+      },
+      {
+        "title": "Saint John of Kanty, priest",
+        "type": "Optional Commemoration",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 23)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1224",
+    "month": "December",
+    "monthNum": 12,
+    "day": 24,
+    "season": "Advent",
+    "events": [
+      {
+        "title": "Advent Weekday (December 24)",
+        "type": "Feria",
+        "color": "violet"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Advent Weekday (December 24)",
+      "type": "Feria",
+      "color": "violet"
+    }
+  },
+  {
+    "dateCode": "1225",
+    "month": "December",
+    "monthNum": 12,
+    "day": 25,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "The Nativity of the Lord (Christmas)",
+        "type": "Solemnity",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Nativity of the Lord (Christmas)",
+      "type": "Solemnity",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1226",
+    "month": "December",
+    "monthNum": 12,
+    "day": 26,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "Saint Stephen, first martyr",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "Saint Stephen, first martyr",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1227",
+    "month": "December",
+    "monthNum": 12,
+    "day": 27,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "The Holy Family of Jesus, Mary and Joseph",
+        "type": "Feast",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "type": "Feast",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1228",
+    "month": "December",
+    "monthNum": 12,
+    "day": 28,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "The Holy Innocents, martyrs",
+        "type": "Feast",
+        "color": "red"
+      }
+    ],
+    "primaryEvent": {
+      "title": "The Holy Innocents, martyrs",
+      "type": "Feast",
+      "color": "red"
+    }
+  },
+  {
+    "dateCode": "1229",
+    "month": "December",
+    "monthNum": 12,
+    "day": 29,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "5ᵗʰ Day in the Octave of Christmas",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Thomas Becket, bishop and martyr",
+        "type": "Optional Commemoration",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "5ᵗʰ Day in the Octave of Christmas",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1230",
+    "month": "December",
+    "monthNum": 12,
+    "day": 30,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "6ᵗʰ Day in the Octave of Christmas",
+        "type": "Feria",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "6ᵗʰ Day in the Octave of Christmas",
+      "type": "Feria",
+      "color": "white"
+    }
+  },
+  {
+    "dateCode": "1231",
+    "month": "December",
+    "monthNum": 12,
+    "day": 31,
+    "season": "Christmas Time",
+    "events": [
+      {
+        "title": "7ᵗʰ Day in the Octave of Christmas",
+        "type": "Feria",
+        "color": "white"
+      },
+      {
+        "title": "Saint Sylvester I, pope",
+        "type": "Optional Commemoration",
+        "color": "white"
+      }
+    ],
+    "primaryEvent": {
+      "title": "7ᵗʰ Day in the Octave of Christmas",
+      "type": "Feria",
+      "color": "white"
+    }
+  }
+]

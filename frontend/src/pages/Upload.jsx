@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { FiCamera, FiFileText, FiStar, FiClock, FiX, FiAlertTriangle, FiCheck, FiRotateCcw, FiLoader } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
-import Tesseract from 'tesseract.js';
 import { useAuth } from '../context/AuthContext';
 
 // ── Device Detection ─────────────────────────────────────────────────────────
@@ -238,83 +237,137 @@ export default function Upload() {
     }
   };
 
-  // ── Confirm → proceed to client-side OCR & recommendations ────────────────
+  // ── Confirm → send image/PDF to backend for AI analysis ─────────────────
   const onConfirm = async () => {
     if (!selectedFile) return;
-    
+
+    // 1. Immediate State Reset: Flush out previous recommendation results from session storage
+    sessionStorage.removeItem('hymnmatch_results');
+
+    // 2. Trigger clean loading spinner state
     setFlow('processing');
-    setProcessingStatus('Running Client-Side OCR...');
 
     try {
-      let extractedText = '';
+      const laptopIp = window.location.hostname || '127.0.0.1';
+      let data;
 
       if (selectedFile.type === 'application/pdf') {
+        // ── PDF path: extract text client-side → /api/recommendations ──────
         setProcessingStatus('Parsing PDF Document...');
-        // Standard client-side text extractor fallback
-        const text = await new Promise((resolve) => {
+        const extractedText = await new Promise((resolve) => {
           const reader = new FileReader();
           reader.onload = () => {
             const content = reader.result;
-            // Extract alphanumeric words to construct raw unstructured text
-            const matches = content.match(/[\w\s,.-]{4,}/g);
-            resolve(matches ? matches.slice(0, 1000).join(' ') : 'PDF Liturgical Text');
+            // Grab readable words from the raw bytes
+            const matches = content.match(/[\w\s,.'\u00C0-\u024F-]{4,}/g);
+            resolve(matches ? matches.slice(0, 1200).join(' ') : '');
           };
-          reader.readAsText(selectedFile.slice(0, 80000));
+          reader.readAsText(selectedFile.slice(0, 100000));
         });
-        extractedText = text;
+
+        if (!extractedText.trim()) {
+          throw new Error('Could not extract readable text from this PDF. Please try an image scan instead.');
+        }
+
+        setProcessingStatus('Fetching Song Suggestions...');
+        // 3. Cache Busting: Append unique timestamp
+        const response = await fetch(`http://${laptopIp}:5000/api/recommendations?t=${Date.now()}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: extractedText, season })
+        });
+
+        if (!response.ok) {
+          let errBody = {};
+          try { errBody = await response.json(); } catch (_) {}
+          const phase = errBody.phase ? ` [${errBody.phase}]` : '';
+          const hint  = errBody.hint  ? ` — ${errBody.hint}`  : '';
+          throw new Error((errBody.error || `Server error (HTTP ${response.status})`) + hint + phase);
+        }
+        data = await response.json();
+
       } else {
-        // Image: run client-side OCR using Tesseract.js
-        const result = await Tesseract.recognize(selectedFile, 'eng', {
-          logger: m => {
-            if (m.status === 'recognizing') {
-              setProcessingStatus(`OCR Progress: ${Math.round(m.progress * 100)}%`);
-            }
-          }
+        // ── Image path: send base64 directly to Gemini Vision ───────────────
+        // This bypasses Tesseract and lets Gemini detect the language natively.
+        setProcessingStatus('Reading image...');
+        const base64 = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = reject;
+          reader.readAsDataURL(selectedFile);
         });
-        extractedText = result.data.text;
+
+        setProcessingStatus('Analyzing document with AI...');
+        // 3. Cache Busting: Append unique timestamp
+        const response = await fetch(`http://${laptopIp}:5000/api/analyze-document?t=${Date.now()}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            imageBase64: base64,
+            mimeType: selectedFile.type,
+            season
+          })
+        });
+
+        if (!response.ok) {
+          let errBody = {};
+          try { errBody = await response.json(); } catch (_) {}
+          throw new Error(errBody.error || `AI analysis failed (HTTP ${response.status})`);
+        }
+
+        const analysisResult = await response.json();
+
+        // Convert nested recommendations → flat 4-item array expected by Suggestions.jsx
+        if (analysisResult.recommendations) {
+          const MASS_PARTS = ['Entrance', 'Offertory', 'Communion', 'Recessional'];
+          data = MASS_PARTS.map(part => {
+            const songs = analysisResult.recommendations[part] || [];
+            const song = songs[0] || {};
+            return {
+              mass_part: part,
+              title: song.title || `${part} Hymn`,
+              composer: song.composer || 'Traditional',
+              lyrics: song.lyrics || 'Lyrics not available.'
+            };
+          });
+        } else if (Array.isArray(analysisResult)) {
+          data = analysisResult;
+        } else {
+          throw new Error('Unexpected response format from AI analysis.');
+        }
       }
 
-      if (!extractedText.trim()) {
-        throw new Error('Could not extract any readable text from the document. Please verify it is a clear image.');
+      // ── Persist & navigate ──────────────────────────────────────────────
+      setProcessingStatus('Done!');
+
+      const lastUploadedResults = {
+        id: Date.now() * 1000 + Math.floor(Math.random() * 1000),
+        filename: selectedFile.name,
+        hymns: data,
+        timestamp: new Date().toISOString(),
+        created_at: new Date().toISOString()
+      };
+      localStorage.setItem('lastUploadedResults', JSON.stringify(lastUploadedResults));
+
+      try {
+        const uploadHistory = JSON.parse(localStorage.getItem('hymnmatch_upload_history') || '[]');
+        uploadHistory.unshift(lastUploadedResults);
+        localStorage.setItem('hymnmatch_upload_history', JSON.stringify(uploadHistory));
+      } catch (e) {
+        console.error('Failed to save to upload history', e);
       }
 
-      setProcessingStatus('Fetching Song Suggestions...');
-
-      const response = await fetch('http://127.0.0.1:5000/api/recommendations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          text: extractedText,
-          season: season
-        })
-      });
-
-      if (!response.ok) {
-        // Read the actual JSON error body from the backend instead of discarding it
-        let errBody = {};
-        try { errBody = await response.json(); } catch (_) { /* non-JSON body */ }
-        const phase = errBody.phase ? ` [${errBody.phase}]` : '';
-        const hint  = errBody.hint  ? ` — ${errBody.hint}`  : '';
-        const msg   = errBody.error || `Server error (HTTP ${response.status})`;
-        console.error(`[Upload] Backend error${phase}:`, msg + hint);
-        throw new Error(`${msg}${hint}`);
-      }
-
-       const data = await response.json();
-      
-      // Store raw JSON array in sessionStorage
+      // 2. State Binding: Overwrite layout values with the new incoming JSON array data
       sessionStorage.setItem('hymnmatch_results', JSON.stringify(data));
-      
+
       if (typeof addAuditLog === 'function') {
         addAuditLog('Liturgical Analysis', `Analyzed document for "${season}".`);
       }
-      
+
       setFlow('idle');
       navigate('/suggestions');
     } catch (err) {
-      console.error(err);
+      console.error('[Upload] onConfirm error:', err);
       setErrorMsg(err.message || 'Failed to complete document analysis.');
       setFlow('file-error');
     }
@@ -612,12 +665,11 @@ export default function Upload() {
         </div>
 
         <div className="bg-white/80 dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:hover:bg-slate-800/80 transition-all relative overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-orange-400 to-orange-500 dark:from-orange-500 dark:to-orange-600" />
-          <div className="w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center mb-4 ml-3">
+          <div className="w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center mb-4">
             <FiClock size={20} className="text-orange-500 dark:text-orange-400" />
           </div>
-          <h3 className="text-slate-800 dark:text-slate-200 font-bold text-lg mb-1 ml-3">Last Uploaded</h3>
-          <p className="text-slate-500 dark:text-slate-400 text-sm font-medium ml-3">Propers for 30th Sunday</p>
+          <h3 className="text-slate-800 dark:text-slate-200 font-bold text-lg mb-1">Last Uploaded</h3>
+          <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">Propers for 30th Sunday</p>
         </div>
       </div>
 

@@ -32,7 +32,19 @@ export const AuthProvider = ({ children }) => {
   // Global state for Saved Songs
   const [savedSongs, setSavedSongs] = useState(() => {
     const local = localStorage.getItem('hymnmatch_saved_songs');
-    if (local) return JSON.parse(local);
+    if (local) {
+      try {
+        const parsed = JSON.parse(local);
+        const seenIds = new Set();
+        return parsed.map((song, index) => {
+          if (!song.id || seenIds.has(song.id)) {
+            song.id = Date.now() * 1000 + index + Math.floor(Math.random() * 1000);
+          }
+          seenIds.add(song.id);
+          return song;
+        });
+      } catch (_) {}
+    }
     return [
       { id: 1, title: 'Amazing Grace', category: 'COMMUNION', season: 'ORDINARY TIME', isDeleting: false },
       { id: 2, title: 'Be Not Afraid', category: 'ENTRANCE', season: 'LENT', isDeleting: false },
@@ -46,7 +58,19 @@ export const AuthProvider = ({ children }) => {
   // Global state for Audit Logs (Activity History)
   const [auditLogs, setAuditLogs] = useState(() => {
     const local = localStorage.getItem('hymnmatch_audit_logs');
-    if (local) return JSON.parse(local);
+    if (local) {
+      try {
+        const parsed = JSON.parse(local);
+        const seenIds = new Set();
+        return parsed.map((log, index) => {
+          if (!log.id || seenIds.has(log.id)) {
+            log.id = Date.now() * 1000 + index + Math.floor(Math.random() * 1000);
+          }
+          seenIds.add(log.id);
+          return log;
+        });
+      } catch (_) {}
+    }
     return [
       { id: 1, timestamp: new Date(Date.now() - 3600000 * 2).toISOString(), action: 'User Session', details: 'Initial session established successfully.' },
       { id: 2, timestamp: new Date(Date.now() - 3600000 * 1.5).toISOString(), action: 'Liturgical Analysis', details: 'Uploaded document and fetched hymn suggestions for Easter Season.' },
@@ -66,7 +90,7 @@ export const AuthProvider = ({ children }) => {
 
   const addAuditLog = (action, details) => {
     const newLog = {
-      id: Date.now(),
+      id: Date.now() * 1000 + Math.floor(Math.random() * 1000),
       timestamp: new Date().toISOString(),
       action,
       details

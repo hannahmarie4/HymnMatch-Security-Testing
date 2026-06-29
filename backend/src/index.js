@@ -1,117 +1,129 @@
+'use strict';
+/**
+ * index.js  —  HymnMatch Backend Server
+ * ──────────────────────────────────────────────────────────────────────────────
+ * All routes that require DB-backed hymn recommendations delegate to
+ * the shared hymnPipeline module (src/lib/hymnPipeline.js), which
+ * implements the 3-step hybrid retrieval pipeline:
+ *
+ *   STEP 1  Gemini NLP/Vision → language + theme extraction
+ *   STEP 2  Supabase query → fetch real catholic_songs rows
+ *   STEP 3  Gemini ranking → select best DB candidate per mass part
+ */
+
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors');
+const cors    = require('cors');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { runHymnPipeline }    = require('./lib/hymnPipeline');
 
 const app = express();
 app.use(cors());
-app.use(express.json({ limit: '10mb' }));
+app.use(express.json({ limit: '15mb' }));
 
 const PORT = process.env.PORT || 5000;
-const { loginLimiter } = require('./middleware/rateLimiter');
-const recommendationsRouter = require('./routes/recommendations');
-const readingsRouter = require('./routes/readings');
+
+// ── Route modules ──────────────────────────────────────────────────────────────
+const { loginLimiter }        = require('./middleware/rateLimiter');
+const recommendationsRouter   = require('./routes/recommendations');
+const readingsRouter          = require('./routes/readings');
+const calendarRouter          = require('./routes/calendar');
 
 app.use('/api/recommendations', recommendationsRouter);
-app.use('/api/readings', readingsRouter);
+app.use('/api/readings',        readingsRouter);
+app.use('/api/calendar',        calendarRouter);
 
-app.get('/', (req, res) => {
-    res.send('HymnMatch Secure Backend is Running!');
-});
+// ── Health check ───────────────────────────────────────────────────────────────
+app.get('/', (_req, res) => res.send('HymnMatch Backend is running.'));
 
+// ── Auth (dummy / thesis demo) ─────────────────────────────────────────────────
 app.post('/auth/login', loginLimiter, async (req, res) => {
-  // Existing login logic here
-  const { email, password } = req.body;
-  
-  try {
-    // Your login code (Dummy for thesis defense proof)
-    if (!email || !password) throw new Error('Missing credentials');
-    res.status(200).json({ success: true });
-  } catch (error) {
-    return res.status(401).json({ error: 'Invalid credentials' });
-  }
-});
-
-app.post('/api/analyze-document', async (req, res) => {
+    const { email, password } = req.body;
     try {
-        const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-        
-        const { imageBase64, mimeType, season } = req.body;
-        
-        if (!imageBase64) {
-            return res.status(400).json({ error: "No image provided" });
-        }
-
-        const userSeason = season || 'Ordinary Time';
-
-        const prompt = `You are an expert Catholic Liturgical Music Director.
-Analyze this image of a liturgical document (e.g. readings, missal, homily notes).
-1. Extract the main text (OCR).
-2. Identify the core religious theme (e.g. "Grace", "Repentance", "Eucharist") and the tone (e.g. "Hopeful", "Joyful", "Penitential").
-3. Detect the most likely liturgical season from the content (Advent, Christmas, Lent, Easter, Ordinary Time, or Pentecost). The user currently has "${userSeason}" selected — compare your detection against this.
-4. List the top 2-3 themes found in the reading.
-5. Recommend exactly 1-2 appropriate Catholic hymns for EACH of the following Mass parts: Entrance, Offertory, Communion.
-CRITICAL INSTRUCTION: You MUST ONLY recommend officially approved Catholic hymns found in hymnals like Breaking Bread, Gather, Journeysongs, or Catholic Book of Worship (published by OCP, GIA, WLP, etc.). Do NOT recommend secular songs or general non-denominational Protestant worship songs.
-Return the result EXACTLY as a raw JSON object with this structure (no markdown formatting):
-{
-  "extractedText": "...",
-  "theme": "Main Theme",
-  "themes": ["theme1", "theme2", "theme3"],
-  "tone": "...",
-  "detectedSeason": "Detected Liturgical Season",
-  "seasonConfidence": 95,
-  "recommendations": {
-    "Entrance": [{ "title": "Song Title", "composer": "Composer Name", "matchScore": 95 }],
-    "Offertory": [{ "title": "Song Title", "composer": "Composer Name", "matchScore": 90 }],
-    "Communion": [{ "title": "Song Title", "composer": "Composer Name", "matchScore": 92 }]
-  }
-}`;
-
-        // The base64 string usually looks like "data:image/jpeg;base64,/9j/4AAQ..."
-        // We need to strip off the header.
-        const base64Data = imageBase64.includes(',') ? imageBase64.split(',')[1] : imageBase64;
-
-        const imagePart = {
-            inlineData: {
-                data: base64Data,
-                mimeType: mimeType || "image/jpeg"
-            }
-        };
-
-        const result = await model.generateContent([prompt, imagePart]);
-        const responseText = result.response.text();
-        
-        // Clean up markdown if Gemini returns it wrapped in ```json ... ```
-        const cleanedText = responseText.replace(/```json/g, '').replace(/```/g, '').trim();
-        const jsonResult = JSON.parse(cleanedText);
-        
-        res.status(200).json(jsonResult);
+        if (!email || !password) throw new Error('Missing credentials');
+        res.status(200).json({ success: true });
     } catch (error) {
-        console.error("AI Error:", error);
-        res.status(500).json({ error: "Failed to analyze document. Please check the backend logs." });
+        res.status(401).json({ error: 'Invalid credentials' });
     }
 });
 
+// ── POST /api/analyze-document ─────────────────────────────────────────────────
+/**
+ * Image-based (OCR) recommendation path.
+ *
+ * Request body:
+ *   { imageBase64: string, mimeType?: string, season?: string }
+ *
+ * Flow:
+ *   1. Gemini Vision reads the image → detects language + themes   (STEP 1)
+ *   2. Supabase query → tiered retrieval from catholic_songs        (STEP 2)
+ *   3. Gemini ranking → picks best DB candidate per mass part       (STEP 3)
+ *
+ * Response: flat array of 4 hymn objects:
+ *   [{ mass_part, title, composer, lyrics }, ...]
+ */
+app.post('/api/analyze-document', async (req, res) => {
+    const { imageBase64, mimeType, season } = req.body;
+
+    if (!imageBase64) {
+        return res.status(400).json({ error: 'No image provided.' });
+    }
+
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+        return res.status(500).json({ error: 'GEMINI_API_KEY missing from backend .env.' });
+    }
+
+    try {
+        console.log(`[analyze-document] Image received (mimeType: ${mimeType || 'image/jpeg'}), season: ${season || 'Ordinary Time'}`);
+
+        // Strip data-URL header so we pass raw base64 to the pipeline
+        const base64Data = imageBase64.includes(',')
+            ? imageBase64.split(',')[1]
+            : imageBase64;
+
+        const hymns = await runHymnPipeline({
+            base64: base64Data,
+            mimeType: mimeType || 'image/jpeg',
+            season:   season   || 'Ordinary Time',
+            apiKey,
+            mode: 'image'
+        });
+
+        return res.status(200).json(hymns);
+
+    } catch (error) {
+        console.error('[analyze-document] Error:', error.message, '\n', error.stack);
+        res.status(500).json({ error: 'Failed to analyze document. Check backend logs.' });
+    }
+});
+
+// ── POST /api/lyrics ───────────────────────────────────────────────────────────
+/**
+ * Fetch full lyrics for a specific hymn title via Gemini.
+ * Request body: { title: string, composer?: string }
+ */
 app.post('/api/lyrics', async (req, res) => {
+    const { title, composer } = req.body;
+    if (!title) return res.status(400).json({ error: 'No song title provided.' });
+
     try {
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-        
-        const { title, composer } = req.body;
-        
-        if (!title) return res.status(400).json({ error: "No song title provided" });
+        const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
-        const prompt = `Provide the public domain or common liturgical lyrics for the Catholic hymn "${title}" by ${composer || "unknown"}. Return only the lyrics separated by standard paragraphs, no markdown, no chords. If the exact lyrics are unknown, provide the closest known traditional lyrics or a brief summary of the song's liturgical use.`;
-        
+        const prompt = `Provide the public domain or common liturgical lyrics for the Catholic hymn "${title}" by ${composer || 'unknown'}. Return only the lyrics separated by standard paragraphs — no markdown, no chords, no song title header. If the exact lyrics are unknown, provide the closest known traditional lyrics or a brief summary of the hymn's liturgical use.`;
+
         const result = await model.generateContent(prompt);
         res.status(200).json({ lyrics: result.response.text() });
     } catch (error) {
-        console.error("Lyrics AI Error:", error);
-        res.status(500).json({ error: "Failed to fetch lyrics." });
+        console.error('[lyrics] Error:', error);
+        res.status(500).json({ error: 'Failed to fetch lyrics.' });
     }
 });
 
+// ── Start server ───────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`\n╔═══════════════════════════════════════════╗`);
+    console.log(`║   HymnMatch Backend running on port ${PORT}  ║`);
+    console.log(`╚═══════════════════════════════════════════╝\n`);
 });

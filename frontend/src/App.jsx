@@ -15,6 +15,7 @@ import SongDetail from './pages/SongDetail';
 import SavedSongs from './pages/SavedSongs';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
+import LiturgicalCalendar from './pages/LiturgicalCalendar';
 import './App.css';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/song-detail" element={<SongDetail />} />
           <Route path="/saved" element={<SavedSongs />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/liturgical-calendar" element={<LiturgicalCalendar />} />
         </Route>
 
         {/* Catch-all 404 Route */}

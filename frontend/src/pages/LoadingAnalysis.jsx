@@ -27,7 +27,8 @@ export default function LoadingAnalysis() {
 
         const uploadData = JSON.parse(uploadDataStr);
 
-        const response = await fetch('http://127.0.0.1:5000/api/analyze-document', {
+        const laptopIp = window.location.hostname || '127.0.0.1';
+        const response = await fetch(`http://${laptopIp}:5000/api/analyze-document`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(uploadData)

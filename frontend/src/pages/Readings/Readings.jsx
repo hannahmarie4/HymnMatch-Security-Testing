@@ -77,7 +77,8 @@ export default function Readings() {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/readings/scrape');
+      const laptopIp = window.location.hostname || '127.0.0.1';
+      const res = await fetch(`http://${laptopIp}:5000/api/readings/scrape`);
       if (!res.ok) throw new Error('Scraper failed');
       const scraped = await res.json();
 
@@ -295,7 +296,7 @@ export default function Readings() {
           </button>
         </div>
       ) : readings.length === 0 ? (
-        <div className="flex flex-col items-center justify-center py-20 space-y-3 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm rounded-3xl border border-slate-200/60 dark:border-slate-800/60">
+        <div className="flex flex-col items-center justify-center py-20 space-y-3 bg-white dark:bg-slate-900/40 backdrop-blur-sm rounded-3xl border border-slate-200/60 dark:border-slate-800/60">
           <FiBookOpen size={44} className="text-slate-300 dark:text-slate-700" />
           <p className="text-slate-600 dark:text-slate-400 font-bold text-lg">No readings for this month</p>
           <p className="text-slate-400 dark:text-slate-500 text-sm">Please check back later or update the database.</p>

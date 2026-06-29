@@ -85,6 +85,24 @@ export default function Home() {
   const [errorMsg, setErrorMsg] = useState('');
   const [isDragging, setIsDragging] = useState(false);
   const [processingStatus, setProcessingStatus] = useState('');
+  const [lastUploadInfo, setLastUploadInfo] = useState(null);
+
+  useEffect(() => {
+    const data = localStorage.getItem('lastUploadedResults');
+    if (data) {
+      try {
+        setLastUploadInfo(JSON.parse(data));
+      } catch (_) {}
+    }
+  }, []);
+
+  const lastUploadDate = lastUploadInfo
+    ? new Date(lastUploadInfo.created_at || lastUploadInfo.timestamp).toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      })
+    : null;
 
   // Liturgical season
   const today = new Date();
@@ -240,62 +258,148 @@ export default function Home() {
   const onConfirm = async () => {
     if (!selectedFile) return;
     
+    // 1. Immediate State Reset: Flush out previous recommendation results from session storage
+    sessionStorage.removeItem('hymnmatch_results');
+
+    // 2. Trigger clean loading spinner state
     setFlow('processing');
-    setProcessingStatus('Running Client-Side OCR...');
 
     try {
-      let extractedText = '';
+      let data;
 
-      if (selectedFile.type === 'application/pdf') {
-        setProcessingStatus('Parsing PDF Document...');
-        // Standard client-side text extractor fallback
-        const text = await new Promise((resolve) => {
-          const reader = new FileReader();
-          reader.onload = () => {
-            const content = reader.result;
-            // Extract alphanumeric words to construct raw unstructured text
-            const matches = content.match(/[\w\s,.-]{4,}/g);
-            resolve(matches ? matches.slice(0, 1000).join(' ') : 'PDF Liturgical Text');
-          };
-          reader.readAsText(selectedFile.slice(0, 80000));
-        });
-        extractedText = text;
-      } else {
-        // Image: run client-side OCR using Tesseract.js
-        const result = await Tesseract.recognize(selectedFile, 'eng', {
-          logger: m => {
-            if (m.status === 'recognizing') {
-              setProcessingStatus(`OCR Progress: ${Math.round(m.progress * 100)}%`);
-            }
+      if (uploadMode === 'image') {
+        setProcessingStatus('Sending image to AI engine...');
+        
+        // Mobile camera capture: send raw image file to Python FastAPI backend on Port 8080
+        const laptopIp = window.location.hostname || 'localhost';
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+        formData.append('season', season);
+
+        try {
+          // 3. Cache Busting: Append unique timestamp
+          const response = await fetch(`http://${laptopIp}:8080/api/v1/ocr?t=${Date.now()}`, {
+            method: 'POST',
+            body: formData
+          });
+
+          if (!response.ok) {
+            throw new Error('AI Backend (Port 8080) failed to analyze camera capture.');
           }
+
+          data = await response.json();
+        } catch (fetchErr) {
+          console.warn('AI Backend (Port 8080) failed or unreachable. Falling back to local OCR & Port 5000 Node.js backend...', fetchErr);
+          
+          setProcessingStatus('Running Client-Side OCR (Fallback)...');
+          const result = await Tesseract.recognize(selectedFile, 'eng+tgl', {
+            logger: m => {
+              if (m.status === 'recognizing') {
+                setProcessingStatus(`OCR Progress: ${Math.round(m.progress * 100)}%`);
+              }
+            }
+          });
+          const extractedText = result.data.text;
+
+          if (!extractedText.trim()) {
+            throw new Error('Could not extract any readable text from the document. Please verify it is a clear image.');
+          }
+
+          setProcessingStatus('Fetching Song Suggestions...');
+          // 3. Cache Busting: Append unique timestamp
+          const fallbackResponse = await fetch(`http://${laptopIp}:5000/api/recommendations?t=${Date.now()}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              text: extractedText,
+              season: season
+            })
+          });
+
+          if (!fallbackResponse.ok) {
+            throw new Error('Server returned an error generating recommendations.');
+          }
+
+          data = await fallbackResponse.json();
+        }
+      } else {
+        // Document upload: run original client-side parsing & Node.js Port 5000 flow
+        setProcessingStatus('Running Client-Side OCR...');
+        let extractedText = '';
+
+        if (selectedFile.type === 'application/pdf') {
+          setProcessingStatus('Parsing PDF Document...');
+          // Standard client-side text extractor fallback
+          const text = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => {
+              const content = reader.result;
+              // Extract alphanumeric words to construct raw unstructured text
+              const matches = content.match(/[\w\s,.-]{4,}/g);
+              resolve(matches ? matches.slice(0, 1000).join(' ') : 'PDF Liturgical Text');
+            };
+            reader.readAsText(selectedFile.slice(0, 80000));
+          });
+          extractedText = text;
+        } else {
+          // Image: run client-side OCR using Tesseract.js
+          const result = await Tesseract.recognize(selectedFile, 'eng+tgl', {
+            logger: m => {
+              if (m.status === 'recognizing') {
+                setProcessingStatus(`OCR Progress: ${Math.round(m.progress * 100)}%`);
+              }
+            }
+          });
+          extractedText = result.data.text;
+        }
+
+        if (!extractedText.trim()) {
+          throw new Error('Could not extract any readable text from the document. Please verify it is a clear image.');
+        }
+
+        setProcessingStatus('Fetching Song Suggestions...');
+
+        const laptopIp = window.location.hostname || '127.0.0.1';
+        // 3. Cache Busting: Append unique timestamp
+        const response = await fetch(`http://${laptopIp}:5000/api/recommendations?t=${Date.now()}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            text: extractedText,
+            season: season
+          })
         });
-        extractedText = result.data.text;
+
+        if (!response.ok) {
+          throw new Error('Server returned an error generating recommendations.');
+        }
+
+        data = await response.json();
       }
-
-      if (!extractedText.trim()) {
-        throw new Error('Could not extract any readable text from the document. Please verify it is a clear image.');
-      }
-
-      setProcessingStatus('Fetching Song Suggestions...');
-
-      const response = await fetch('http://127.0.0.1:5000/api/recommendations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          text: extractedText,
-          season: season
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Server returned an error generating recommendations.');
-      }
-
-      const data = await response.json();
       
-      // Store raw JSON array in sessionStorage
+      // Store in localStorage for 'Paraan 2' persistence in Profile
+      const lastUploadedResults = {
+        id: Date.now() * 1000 + Math.floor(Math.random() * 1000),
+        filename: selectedFile.name,
+        hymns: data,
+        timestamp: new Date().toISOString(),
+        created_at: new Date().toISOString()
+      };
+      localStorage.setItem('lastUploadedResults', JSON.stringify(lastUploadedResults));
+      
+      try {
+        const uploadHistory = JSON.parse(localStorage.getItem('hymnmatch_upload_history') || '[]');
+        uploadHistory.unshift(lastUploadedResults);
+        localStorage.setItem('hymnmatch_upload_history', JSON.stringify(uploadHistory));
+      } catch (e) {
+        console.error('Failed to save to upload history', e);
+      }
+      
+      // 2. State Binding: Overwrite layout values with the new incoming JSON array data
       sessionStorage.setItem('hymnmatch_results', JSON.stringify(data));
       
       setFlow('idle');
@@ -528,7 +632,7 @@ export default function Home() {
       </div>
 
       {/* ── Liturgical Season Box ── */}
-      <div className="bg-white/80 dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 mb-10 flex items-center space-x-4 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none transition-colors duration-300">
+      <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 mb-10 flex items-center space-x-4 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none transition-colors duration-300">
         <div className={`w-10 h-10 rounded-full border ${seasonBorder} dark:border-opacity-20 flex items-center justify-center ${seasonBg} dark:bg-opacity-10 transition-colors duration-500`}>
           <div className={`w-3 h-3 rounded-full ${seasonColor} shadow-sm ${seasonShadow}`} />
         </div>
@@ -547,7 +651,7 @@ export default function Home() {
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
-          className={`bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm border-2 border-dashed rounded-3xl p-10 flex flex-col items-center justify-center mb-6 transition-all ${
+          className={`bg-white dark:bg-slate-900/40 backdrop-blur-sm border-2 border-dashed rounded-3xl p-10 flex flex-col items-center justify-center mb-6 transition-all ${
             isDragging 
               ? 'border-purple-500 bg-purple-50/50 dark:bg-purple-900/20' 
               : 'border-purple-200 dark:border-purple-900/50 hover:border-purple-300 dark:hover:border-purple-700'
@@ -590,7 +694,7 @@ export default function Home() {
 
       {/* ── Info Cards ── */}
       <div className="grid grid-cols-2 gap-6">
-        <div className="bg-white/80 dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:hover:bg-slate-800/80 transition-all">
+        <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:hover:bg-slate-800/80 transition-all">
           <div className="w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center mb-4">
             <FiStar size={20} className="text-emerald-500 dark:text-emerald-400" />
           </div>
@@ -598,13 +702,17 @@ export default function Home() {
           <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">Suggested hymns based on today's readings</p>
         </div>
 
-        <div className="bg-white/80 dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:hover:bg-slate-800/80 transition-all relative overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-orange-400 to-orange-500 dark:from-orange-500 dark:to-orange-600" />
-          <div className="w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center mb-4 ml-3">
+        <div className="bg-white dark:bg-slate-900/60 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-slate-800/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:hover:bg-slate-800/80 transition-all relative overflow-hidden">
+          <div className="w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center mb-4">
             <FiClock size={20} className="text-orange-500 dark:text-orange-400" />
           </div>
-          <h3 className="text-slate-800 dark:text-slate-200 font-bold text-lg mb-1 ml-3">Last Uploaded</h3>
-          <p className="text-slate-500 dark:text-slate-400 text-sm font-medium ml-3">Propers for 30th Sunday</p>
+          <h3 className="text-slate-800 dark:text-slate-200 font-bold text-lg mb-1">Last Uploaded</h3>
+          <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">
+            {lastUploadInfo?.filename || "Propers for 30th Sunday"}
+          </p>
+          <p className="text-xs text-slate-400 mt-1">
+            Uploaded on: {lastUploadDate || "Jun 24, 2026"}
+          </p>
         </div>
       </div>
 
